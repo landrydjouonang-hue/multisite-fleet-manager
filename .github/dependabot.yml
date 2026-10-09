@@ -1,0 +1,22 @@
+version: 2
+updates:
+  # Development tooling only: the plugin itself has no runtime dependency.
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: 'build'
+    labels:
+      - dependencies
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: 'ci'
+    labels:
+      - dependencies

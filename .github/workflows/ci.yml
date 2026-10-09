@@ -1,0 +1,93 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  syntax:
+    name: PHP ${{ matrix.php }} syntax
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ['8.0', '8.1', '8.2', '8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+
+      - name: Lint every PHP file
+        run: |
+          find . -path ./vendor -prune -o -name '*.php' -print0 \
+            | xargs -0 -n1 -P4 php -l
+
+  standards:
+    name: Coding standards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+          tools: cs2pr
+
+      - name: Install dependencies
+        uses: ramsey/composer-install@v3
+
+      - name: PHPCS (WordPress standards + PHP 8.0 compatibility)
+        id: phpcs
+        run: vendor/bin/phpcs --report-full --report-checkstyle=./phpcs-report.xml
+
+      - name: Annotate the diff
+        if: ${{ always() && steps.phpcs.outcome == 'failure' }}
+        run: cs2pr ./phpcs-report.xml
+
+  readme:
+    name: Plugin headers and readme
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Version numbers agree
+        run: |
+          header="$(grep -m1 '^ \* Version:' multisite-fleet-manager.php | tr -d ' ' | cut -d: -f2)"
+          constant="$(grep -m1 "WPFLEET_VERSION" multisite-fleet-manager.php | sed "s/.*'\\(.*\\)'.*/\\1/")"
+          stable="$(grep -m1 '^Stable tag:' readme.txt | cut -d: -f2 | tr -d ' ')"
+          echo "header=$header constant=$constant stable=$stable"
+          test "$header" = "$constant"
+          test "$header" = "$stable"
+
+      - name: readme.txt has the required headers
+        run: |
+          for field in 'Contributors:' 'Tags:' 'Requires at least:' 'Tested up to:' 'Requires PHP:' 'Stable tag:' 'License:'; do
+            grep -q "^$field" readme.txt || { echo "missing $field in readme.txt"; exit 1; }
+          done
+          grep -q '^Network: true' readme.txt
+
+      - name: No stray development artefacts
+        run: |
+          ! grep -rn --include='*.php' --exclude-dir=vendor -E '\b(var_dump|print_r|phpinfo|error_log)\s*\(' .
+          ! grep -rn --include='*.php' --exclude-dir=vendor -E '\beval\s*\(' .

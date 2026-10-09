@@ -1,0 +1,33 @@
+# Dependencies (dev tooling only; nothing is required at runtime)
+/vendor/
+/node_modules/
+composer.lock
+
+# Build output
+/build/
+/dist/
+*.zip
+
+# Tooling caches and reports
+.phpcs-cache
+/.phpunit.result.cache
+/phpcs-report.*
+phpcs.xml
+phpunit.xml
+
+# Editors and OS
+/.idea/
+/.vscode/
+*.sublime-*
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local environment
+.env
+.env.local
+/wp-cli.local.yml
+
+# Generated translations (the .pot is committed; compiled catalogues are not)
+/languages/*.mo

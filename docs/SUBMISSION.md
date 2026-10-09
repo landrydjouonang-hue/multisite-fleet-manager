@@ -94,7 +94,7 @@ svn ci -m "Release 1.0.0"
 | `banner-772x250.png`, `banner-1544x500.png` | header banner |
 | `screenshot-1.png` … `screenshot-8.png` | 1200×900 or wider, in the order of the `== Screenshots ==` captions in `readme.txt` |
 
-`docs/DEMO.md` says which eight screens to capture and how to set up a network that shows a mix of health states. Blur real site names and e-mail addresses.
+`DEMO.md` (plugin root) says which eight screens to capture and how to set up a network that shows a mix of health states. Blur real site names and e-mail addresses.
 
 ## 5. Rebuilding the package
 

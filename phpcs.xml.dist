@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ruleset name="Multisite Fleet Manager">
+	<description>WordPress coding standards for Multisite Fleet Manager.</description>
+
+	<file>.</file>
+
+	<arg name="extensions" value="php"/>
+	<arg name="basepath" value="."/>
+	<arg name="colors"/>
+	<arg name="parallel" value="8"/>
+	<arg value="sp"/>
+
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<exclude-pattern>/build/*</exclude-pattern>
+	<exclude-pattern>/dist/*</exclude-pattern>
+
+	<!-- WordPress standards, with the prefixes and text domain this plugin uses. -->
+	<rule ref="WordPress">
+		<!-- The file names follow PSR-4 class names, which the autoloader relies on. -->
+		<exclude name="WordPress.Files.FileName"/>
+	</rule>
+
+	<config name="minimum_wp_version" value="6.4"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="multisite-fleet-manager"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="wpfleet"/>
+				<element value="WPFLEET"/>
+				<element value="FleetManager"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Templates receive a prepared $vars array; locals there are intentionally prefixed wpfc_. -->
+	<rule ref="WordPress.NamingConventions.ValidVariableName">
+		<properties>
+			<property name="allowed_custom_properties" type="array">
+				<element value="base_prefix"/>
+				<element value="last_error"/>
+				<element value="num_queries"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- PHP 8.0 is the floor. -->
+	<rule ref="PHPCompatibilityWP"/>
+	<config name="testVersion" value="8.0-"/>
+</ruleset>
