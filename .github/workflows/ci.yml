@@ -49,7 +49,7 @@ jobs:
           tools: cs2pr
 
       - name: Install dependencies
-        uses: ramsey/composer-install@v3
+        uses: ramsey/composer-install@v4
 
       - name: PHPCS (WordPress standards + PHP 8.0 compatibility)
         id: phpcs
