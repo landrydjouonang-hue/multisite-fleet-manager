@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Multisite Fleet Manager">
+	<title>Multisite Fleet Manager</title>
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#1d2b3a"/>
+			<stop offset="1" stop-color="#0f1824"/>
+		</linearGradient>
+	</defs>
+
+	<rect width="256" height="256" rx="48" fill="url(#bg)"/>
+
+	<!-- The network: one hub, four sites. -->
+	<g stroke="#4f94d4" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.85">
+		<path d="M128 128 L128 68"/>
+		<path d="M128 128 L188 128"/>
+		<path d="M128 128 L128 188"/>
+		<path d="M128 128 L68 128"/>
+	</g>
+
+	<!-- Sites, coloured by health: healthy, healthy, attention, error. -->
+	<circle cx="128" cy="60" r="20" fill="#68de7c"/>
+	<circle cx="196" cy="128" r="20" fill="#68de7c"/>
+	<circle cx="128" cy="196" r="20" fill="#f0c33c"/>
+	<circle cx="60" cy="128" r="20" fill="#e35b5b"/>
+
+	<!-- The console. -->
+	<circle cx="128" cy="128" r="26" fill="#f6f7f9"/>
+	<circle cx="128" cy="128" r="11" fill="#1d2b3a"/>
+</svg>

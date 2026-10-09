@@ -1,0 +1,3387 @@
+# Copyright (C) 2026 Djouonang Landry
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: Multisite Fleet Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/landrydjouonang-hue/multisite-fleet-manager/issues\n"
+"POT-Creation-Date: 2026-10-09 13:19:25+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: multisite-fleet-manager\n"
+
+#. translators: 1: Server name, 2: Current version, 3: Required version.
+#: src/Health/Checks/DatabaseServerCheck.php:65
+msgid "%1$s %2$s is below the %3$s that WordPress requires."
+msgstr ""
+
+#: src/Health/Checks/DatabaseServerCheck.php:81
+msgid "%1$s %2$s is current."
+msgstr ""
+
+#. translators: 1: Server name, 2: Current version, 3: Recommended version.
+#: src/Health/Checks/DatabaseServerCheck.php:73
+msgid "%1$s %2$s is older than the %3$s recommended here."
+msgstr ""
+
+#. translators: 1: Number of plugins, 2: Comma-separated plugin files.
+#: src/Health/Checks/MissingPluginsCheck.php:46
+msgid "%1$s active plugin is not installed: %2$s"
+msgid_plural "%1$s active plugins are not installed: %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: Active, 2: Archived, 3: Spam, 4: Deactivated.
+#: templates/admin/report-print.php:64
+msgid "%1$s active, %2$s archived, %3$s spam, %4$s deactivated"
+msgstr ""
+
+#. translators: 1: Operation, 2: Target.
+#: src/Notifications/Notifier.php:156
+msgid "%1$s failed for %2$s."
+msgstr ""
+
+#: templates/admin/health.php:243
+msgid "%1$s free of %2$s"
+msgstr ""
+
+#. translators: 1: Free space, 2: Total space.
+#: src/Health/Checks/StorageCheck.php:119
+msgid "%1$s free of %2$s on the server filesystem."
+msgstr ""
+
+#. translators: 1: User, 2: Role, 3: Site.
+#: src/Operations/Handlers/UserSiteHandler.php:162
+msgid "%1$s is now %2$s on %3$s."
+msgstr ""
+
+#. translators: 1: User, 2: Number of capabilities.
+#: src/Operations/Handlers/SettingsHandler.php:125
+msgid "%1$s now holds %2$s Fleet Manager capabilities."
+msgstr ""
+
+#: templates/admin/health.php:254
+msgid "%1$s of %2$s sites"
+msgstr ""
+
+#. translators: 1: Size, e.g. "1.4 MB", 2: Size threshold.
+#: src/Health/Checks/AutoloadedOptionsCheck.php:80
+msgid "%1$s of options is loaded on every page view, above the %2$s guideline. Look for plugins storing large values with autoload on."
+msgstr ""
+
+#. translators: 1: Plugin updates, 2: Theme updates, 3: Relative time.
+#: src/Admin/Widgets.php:120
+msgid "%1$s plugin and %2$s theme updates pending. Inventory synced %3$s."
+msgstr ""
+
+#. translators: 1: Total plugins, 2: Site-level plugins, 3: Network-activated plugins.
+#: src/Health/Checks/ActivePluginsCheck.php:78
+msgid "%1$s plugin loads on this site (%2$s here, %3$s network-activated)."
+msgid_plural "%1$s plugins load on this site (%2$s here, %3$s network-activated)."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: Number of updates, 2: Comma-separated plugin names.
+#: src/Health/Checks/PluginUpdatesCheck.php:65
+msgid "%1$s plugin update available: %2$s"
+msgid_plural "%1$s plugin updates available: %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: Number of events, 2: Human-readable duration.
+#: src/Health/Checks/CronCheck.php:77
+msgid "%1$s scheduled task is overdue by %2$s. Scheduled tasks are probably not running on this site."
+msgid_plural "%1$s scheduled tasks are overdue, the oldest by %2$s. Scheduled tasks are probably not running on this site."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: Number of events, 2: Human-readable duration.
+#: src/Health/Checks/CronCheck.php:84
+msgid "%1$s scheduled task is waiting (%2$s late). This is normal on a quiet site, which runs cron on its next visit."
+msgid_plural "%1$s scheduled tasks are waiting (oldest %2$s late). This is normal on a quiet site, which runs cron on its next visit."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: Number of updates, 2: Comma-separated theme names.
+#: src/Health/Checks/ThemeUpdatesCheck.php:70
+msgid "%1$s theme update available: %2$s"
+msgid_plural "%1$s theme updates available: %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: Plugin name, 2: Site name.
+#: src/Operations/Handlers/SitePluginHandler.php:143
+msgid "%1$s was activated on %2$s."
+msgstr ""
+
+#. translators: 1: User, 2: Role, 3: Site.
+#: src/Operations/Handlers/UserSiteHandler.php:127
+msgid "%1$s was added to %3$s as %2$s."
+msgstr ""
+
+#. translators: 1: Plugin name, 2: Site name.
+#: src/Operations/Handlers/SitePluginHandler.php:145
+msgid "%1$s was deactivated on %2$s."
+msgstr ""
+
+#. translators: 1: User, 2: Site.
+#: src/Operations/Handlers/UserSiteHandler.php:141
+msgid "%1$s was removed from %2$s. Their content on that site was left untouched."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:118 src/Operations/Handlers/ThemeUpdateHandler.php:111
+msgid "%1$s was updated to version %2$s on all sites."
+msgstr ""
+
+#. translators: 1: "5 posts", 2: "1 page".
+#: src/Admin/View.php:102
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: %s: Site name.
+#: src/Admin/SitesListTable.php:218
+msgid "%s (opens in a new tab)"
+msgstr ""
+
+#. translators: %s: Number of active sites.
+#: templates/admin/reports.php:35
+msgid "%s active"
+msgstr ""
+
+#. translators: %s: Number of administrators.
+#: src/Health/Checks/AdministratorsCheck.php:76
+msgid "%s administrator on this site."
+msgid_plural "%s administrators on this site."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/View.php:79
+msgid "%s ago"
+msgstr ""
+
+#: templates/admin/console.php:465 templates/admin/health.php:189
+msgid "%s available"
+msgstr ""
+
+#. translators: %s: Number of sites.
+#: templates/admin/dashboard.php:56
+msgid "%s deleted site was removed from the inventory."
+msgid_plural "%s deleted sites were removed from the inventory."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/log.php:79
+msgid "%s entry"
+msgid_plural "%s entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Free space.
+#: src/Health/Checks/StorageCheck.php:125
+msgid "%s free on the server filesystem."
+msgstr ""
+
+#. translators: %s: Number of issues.
+#: templates/admin/console.php:451
+msgid "%s issue"
+msgid_plural "%s issues"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/reports.php:279
+msgid "%s item has an update"
+msgid_plural "%s items have updates"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Health/Checks/AutoloadedOptionsCheck.php:75
+msgid "%s of options is loaded on every page view."
+msgstr ""
+
+#: templates/admin/partials/user-activity.php:41
+msgid "%s open session"
+msgid_plural "%s open sessions"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Recommended memory.
+#: src/Health/Checks/MemoryLimitCheck.php:103
+msgid "%s or more is a safer floor for a busy network."
+msgstr ""
+
+#: templates/admin/health.php:198
+msgid "%s or newer recommended"
+msgstr ""
+
+#. translators: %s: Number of pages.
+#: src/Admin/View.php:106
+msgid "%s page"
+msgid_plural "%s pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of plugins.
+#: src/Health/Checks/OutdatedComponentsCheck.php:86
+msgid "%s plugin"
+msgid_plural "%s plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of posts.
+#: src/Admin/View.php:104
+msgid "%s post"
+msgid_plural "%s posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of scheduled tasks.
+#: src/Health/Checks/CronCheck.php:92
+msgid "%s scheduled task, none overdue."
+msgid_plural "%s scheduled tasks, none overdue."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of settings.
+#: src/Operations/Handlers/SettingsHandler.php:146
+msgid "%s setting was updated."
+msgid_plural "%s settings were updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of sites.
+#: templates/admin/dashboard.php:219 templates/admin/site-extensions.php:190
+msgid "%s site"
+msgid_plural "%s sites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/console.php:243
+msgid "%s site has not been health-checked yet. Refresh the inventory to evaluate it."
+msgid_plural "%s sites have not been health-checked yet. Refresh the inventory to evaluate them."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/health.php:220
+msgid "%s site has overdue tasks"
+msgid_plural "%s sites have overdue tasks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/users.php:80
+msgid "%s site has too many users to index, so its memberships are not listed here. Use its own Users screen."
+msgid_plural "%s sites have too many users to index, so their memberships are not listed here. Use their own Users screens."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Notifications/Notifier.php:195
+msgid "%s site needs updates"
+msgid_plural "%s sites need updates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of sites.
+#: templates/admin/health.php:161
+msgid "%s site needs work"
+msgid_plural "%s sites need work"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Notifications/Notifier.php:191
+msgid "%s site with errors"
+msgid_plural "%s sites with errors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/reports.php:137
+msgid "%s snapshot stored"
+msgid_plural "%s snapshots stored"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Number of themes.
+#: src/Health/Checks/OutdatedComponentsCheck.php:93
+msgid "%s theme"
+msgid_plural "%s themes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: Plugin or theme.
+#: src/Admin/Actions.php:151
+msgid "%s was not attempted (time limit reached). Run it again."
+msgstr ""
+
+#. translators: %s: Percentage.
+#: templates/admin/console.php:209 templates/admin/health.php:82 templates/admin/reports.php:48 templates/admin/reports.php:61 templates/admin/reports.php:100
+msgid "%s%% of fleet"
+msgstr ""
+
+#: src/Admin/View.php:120
+msgid "(error)"
+msgstr ""
+
+#: src/Admin/View.php:119 templates/admin/diagnostics.php:42
+msgid "(needs attention)"
+msgstr ""
+
+#: src/Admin/RequirementNotice.php:101 templates/admin/console.php:554 templates/admin/reports.php:145
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: src/Admin/View.php:118 templates/admin/diagnostics.php:42
+msgid "(passed)"
+msgstr ""
+
+#: templates/admin/console.php:367
+msgid "(remove filter)"
+msgstr ""
+
+#: templates/admin/dashboard.php:194
+msgid "(this dashboard covers the current network)"
+msgstr ""
+
+#: src/Admin/View.php:121
+msgid "(unknown)"
+msgstr ""
+
+#: templates/admin/users.php:229
+msgid "+%s more"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:200
+msgid "A discovery run finished; carries the summary."
+msgstr ""
+
+#. translators: 1: Sites processed, 2: Total sites.
+#: templates/admin/dashboard.php:87
+msgid "A discovery run is in progress (%1$s of %2$s sites)."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:199
+msgid "A discovery run opened."
+msgstr ""
+
+#: src/Operations/Handlers/SnapshotHandler.php:64
+msgid "A report snapshot was captured."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:203
+msgid "A report snapshot was stored."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:201
+msgid "A state-changing operation succeeded."
+msgstr ""
+
+#: src/Health/Checks/AdministratorsCheck.php:85
+msgid "A super admin still uses the default \"admin\" login, which is the first username attackers try."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:141
+msgid "A table is missing. Deactivate and reactivate the plugin."
+msgstr ""
+
+#: templates/admin/reports.php:233
+msgid "A trend appears once two snapshots have been captured. One is taken automatically after discovery, at most twice a day."
+msgstr ""
+
+#: src/Operations/Operation.php:82
+msgid "Access change"
+msgstr ""
+
+#: src/Admin/Help.php:108
+msgid "Accounts are shared by the network; roles are per site. \"Last activity\" is a login recorded by Fleet Manager, or one derived from an open session — WordPress itself keeps no last-login date."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:197 templates/admin/extensions.php:155 templates/admin/settings.php:169 templates/admin/site-extensions.php:118 templates/admin/user-detail.php:112 templates/admin/users.php:173
+msgid "Actions"
+msgstr ""
+
+#: templates/admin/site-extensions.php:152
+msgid "Activate"
+msgstr ""
+
+#: src/Core/Capabilities.php:102
+msgid "Activate and deactivate plugins on sites"
+msgstr ""
+
+#: templates/admin/extensions.php:152 templates/admin/extensions.php:229
+msgid "Activation"
+msgstr ""
+
+#: src/Sites/SiteStatus.php:64 templates/admin/site-extensions.php:34
+msgid "Active"
+msgstr ""
+
+#: templates/admin/console.php:361
+msgid "Active filters"
+msgstr ""
+
+#: templates/admin/site-extensions.php:50
+msgid "Active here"
+msgstr ""
+
+#: templates/admin/users.php:28
+msgid "Active in 30 days"
+msgstr ""
+
+#. translators: %s: Number of sites.
+#: templates/admin/extensions.php:235 templates/admin/extensions.php:259
+msgid "Active on %s site"
+msgid_plural "Active on %s sites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/extensions.php:40 templates/admin/extensions.php:67
+msgid "Active on sites"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:222
+msgid "Active plugin count thresholds."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:81 src/Health/Checks/ActivePluginsCheck.php:32 templates/admin/console.php:542
+msgid "Active plugins"
+msgstr ""
+
+#: templates/admin/settings.php:145
+msgid "Active plugins above"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:237
+msgid "Active sites"
+msgstr ""
+
+#: src/Health/Checks/ActiveThemeCheck.php:27 src/Reporting/CsvExporter.php:283 templates/admin/console.php:385 templates/admin/console.php:468 templates/admin/site-extensions.php:171
+msgid "Active theme"
+msgstr ""
+
+#: templates/admin/dashboard.php:208
+msgid "Active themes"
+msgstr ""
+
+#: templates/admin/user-detail.php:222
+msgid "Activity"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:207
+msgid "Add or remove health checks."
+msgstr ""
+
+#: templates/admin/user-detail.php:186
+msgid "Add to a site"
+msgstr ""
+
+#: templates/admin/user-detail.php:213
+msgid "Add to site"
+msgstr ""
+
+#: templates/admin/users.php:46
+msgid "Add user (Network Admin)"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:278
+msgid "Address"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:209
+msgid "Adjust a site snapshot before it is stored."
+msgstr ""
+
+#: src/Health/Checks/AdministratorsCheck.php:37
+msgid "Administrators"
+msgstr ""
+
+#: templates/admin/settings.php:146
+msgid "Administrators above"
+msgstr ""
+
+#: templates/admin/settings.php:146
+msgid "Administrators on one site before it is flagged."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:227
+msgid "Administrators per site before it is flagged."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:166
+msgid "All"
+msgstr ""
+
+#. translators: %s: Number of indicators.
+#: templates/admin/console.php:453
+msgid "All %s checks passed"
+msgstr ""
+
+#: src/Health/Checks/MissingPluginsCheck.php:42
+msgid "All active plugins are installed."
+msgstr ""
+
+#: templates/admin/health.php:298
+msgid "All checks passed"
+msgstr ""
+
+#: templates/admin/console.php:287
+msgid "All health states"
+msgstr ""
+
+#: templates/admin/log.php:52
+msgid "All operations"
+msgstr ""
+
+#: templates/admin/extensions.php:37 templates/admin/site-extensions.php:88
+msgid "All plugins"
+msgstr ""
+
+#: src/Health/Checks/PluginUpdatesCheck.php:60
+msgid "All plugins running on this site are up to date."
+msgstr ""
+
+#: templates/admin/log.php:61
+msgid "All results"
+msgstr ""
+
+#: templates/admin/health.php:162
+msgid "All sites pass"
+msgstr ""
+
+#: templates/admin/console.php:299
+msgid "All statuses"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:141
+msgid "All tables present."
+msgstr ""
+
+#: templates/admin/console.php:320 templates/admin/extensions.php:30
+msgid "All themes"
+msgstr ""
+
+#: templates/admin/users.php:122
+msgid "All users"
+msgstr ""
+
+#: templates/admin/health.php:211
+msgid "Alternate WP-Cron"
+msgstr ""
+
+#: src/Operations/OperationService.php:153
+msgid "Another Fleet Manager operation is running. Try again when it has finished."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:202
+msgid "Any operation outcome was logged, including refusals."
+msgstr ""
+
+#: templates/admin/users.php:99
+msgid "Any role"
+msgstr ""
+
+#: templates/admin/users.php:113
+msgid "Any site"
+msgstr ""
+
+#: templates/admin/console.php:34
+msgid "Any update state"
+msgstr ""
+
+#: templates/admin/console.php:339 templates/admin/extensions.php:106 templates/admin/log.php:68 templates/admin/users.php:138
+msgid "Apply"
+msgstr ""
+
+#: src/Sites/SiteStatus.php:65
+msgid "Archived"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:238
+msgid "Archived sites"
+msgstr ""
+
+#: templates/admin/user-detail.php:89
+msgid "As a super administrator, this user can reach every site of the network whatever their roles below. Super administrator status is granted in Network Admin → Users."
+msgstr ""
+
+#: templates/admin/reports.php:330
+msgid "Attention"
+msgstr ""
+
+#: templates/admin/extensions.php:198
+msgid "Auto-updates on"
+msgstr ""
+
+#: src/Health/Checks/AutoloadedOptionsCheck.php:29
+msgid "Autoloaded options"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:289
+msgid "Autoloaded options (bytes)"
+msgstr ""
+
+#: templates/admin/settings.php:143
+msgid "Autoloaded options above"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:220
+msgid "Autoloaded options thresholds."
+msgstr ""
+
+#: templates/admin/reports.php:344
+msgid "Automatic"
+msgstr ""
+
+#: templates/admin/report-print.php:122 templates/admin/reports.php:290 templates/admin/reports.php:308
+msgid "Available"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:333
+msgid "Available version"
+msgstr ""
+
+#: templates/admin/report-print.php:27
+msgid "Back to the report"
+msgstr ""
+
+#. translators: %s: List of outdated components, e.g. "WordPress itself, 2 plugins".
+#: src/Health/Checks/OutdatedComponentsCheck.php:100
+msgid "Behind the latest release: %s. Fleet Manager cannot tell which updates are security fixes."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:148
+msgid "Behind: open any admin screen to run the upgrade."
+msgstr ""
+
+#: src/Health/Checks/HttpsCheck.php:67
+msgid "Both site addresses use HTTPS. The certificate itself is not checked."
+msgstr ""
+
+#: templates/admin/extensions.php:195
+msgid "Broken"
+msgstr ""
+
+#: src/Core/Capabilities.php:98
+msgid "Browse network users"
+msgstr ""
+
+#: src/Core/Capabilities.php:96
+msgid "Browse plugins and themes"
+msgstr ""
+
+#: src/Core/Capabilities.php:94
+msgid "Browse the site inventory"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:170
+msgid "Built."
+msgstr ""
+
+#: templates/admin/reports.php:191
+msgid "CSV opens in any spreadsheet. For a PDF, open the printable report and choose \"Save as PDF\" in your browser's print dialog — no extra software needed."
+msgstr ""
+
+#: templates/admin/settings.php:168 templates/admin/settings.php:184 templates/admin/settings.php:213
+msgid "Capabilities"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:210
+msgid "Capabilities granted to a user."
+msgstr ""
+
+#: templates/admin/reports.php:151
+msgid "Capture snapshot"
+msgstr ""
+
+#: templates/admin/reports.php:326 templates/admin/reports.php:341
+msgid "Captured"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:362
+msgid "Captured (UTC)"
+msgstr ""
+
+#: templates/admin/reports.php:320
+msgid "Captured automatically after discovery, and on request."
+msgstr ""
+
+#: templates/admin/user-detail.php:158
+msgid "Change"
+msgstr ""
+
+#: src/Core/Capabilities.php:104
+msgid "Change network settings"
+msgstr ""
+
+#: templates/admin/console.php:180 templates/admin/partials/extensions-head.php:43
+msgid "Check for updates"
+msgstr ""
+
+#: templates/admin/console.php:546
+msgid "Checked"
+msgstr ""
+
+#: templates/admin/console.php:476 templates/admin/extensions.php:192
+msgid "Child of %s"
+msgstr ""
+
+#: templates/admin/diagnostics.php:110
+msgid "Click the report to select it all, then copy."
+msgstr ""
+
+#: templates/admin/settings.php:125
+msgid "Comma separated. Leave empty to use the network admin address (%s)."
+msgstr ""
+
+#: src/Health/Category.php:65
+msgid "Configuration signals only — not a security assessment."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:83
+msgid "Content"
+msgstr ""
+
+#: templates/admin/health.php:119 templates/admin/health.php:151
+msgid "Coverage"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:184
+msgid "DISABLE_WP_CRON is set: an external scheduler must run wp-cron.php, or background work will not happen."
+msgstr ""
+
+#: templates/admin/settings.php:106
+msgid "Daily"
+msgstr ""
+
+#: src/Admin/Admin.php:108 src/Admin/Admin.php:338 src/Admin/Help.php:71 src/Admin/SitesListTable.php:223
+msgid "Dashboard"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:102
+msgid "Database"
+msgstr ""
+
+#: src/Health/Checks/DatabaseServerCheck.php:29
+msgid "Database server"
+msgstr ""
+
+#: src/Health/Checks/DatabaseSizeCheck.php:31 templates/admin/health.php:258 templates/admin/report-print.php:107
+msgid "Database size"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:290
+msgid "Database size (bytes)"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:139
+msgid "Database tables"
+msgstr ""
+
+#: templates/admin/console.php:462
+msgid "Database upgrade needed"
+msgstr ""
+
+#: templates/admin/console.php:544
+msgid "Database version"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:226
+msgid "Database version treated as current."
+msgstr ""
+
+#: templates/admin/site-extensions.php:148
+msgid "Deactivate"
+msgstr ""
+
+#: templates/admin/site-extensions.php:147
+msgid "Deactivate this plugin on this site?"
+msgstr ""
+
+#: src/Sites/SiteStatus.php:68
+msgid "Deactivated"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:240
+msgid "Deactivated sites"
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:30
+msgid "Debug mode"
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:63
+msgid "Debug mode is off."
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:50
+msgid "Debug mode is on and errors can be shown to visitors. Set WP_DEBUG_DISPLAY to false (and display_errors off) on a live network."
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:55
+msgid "Debug mode is on and writing to the debug log."
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:56
+msgid "Debug mode is on."
+msgstr ""
+
+#: templates/admin/health.php:226
+msgid "Debugging"
+msgstr ""
+
+#: templates/admin/settings.php:159
+msgid "Delegated access"
+msgstr ""
+
+#: src/Admin/Help.php:136
+msgid "Delegated access grants read-only capabilities (and running discovery) to people who are not super admins. Updates, user management and settings stay with super admins."
+msgstr ""
+
+#: templates/admin/users.php:197
+msgid "Deleted"
+msgstr ""
+
+#: src/Operations/Operation.php:98
+msgid "Denied"
+msgstr ""
+
+#: templates/admin/console.php:391 templates/admin/console.php:495 templates/admin/log.php:99 templates/admin/log.php:151
+msgid "Details"
+msgstr ""
+
+#: templates/admin/diagnostics.php:108
+msgid "Diagnostic report"
+msgstr ""
+
+#: src/Admin/Admin.php:197 src/Admin/Help.php:142 templates/admin/diagnostics.php:23
+msgid "Diagnostics"
+msgstr ""
+
+#: templates/admin/settings.php:102
+msgid "Digest frequency"
+msgstr ""
+
+#: src/Network/NetworkInfo.php:65
+msgid "Disabled"
+msgstr ""
+
+#: templates/admin/dashboard.php:71
+msgid "Discover sites"
+msgstr ""
+
+#: templates/admin/settings.php:61
+msgid "Discovery"
+msgstr ""
+
+#: templates/admin/settings.php:71
+msgid "Discovery also runs on demand, and the inventory updates in real time as sites change."
+msgstr ""
+
+#: templates/admin/dashboard.php:109
+msgid "Discovery only reads data. It does not change any site."
+msgstr ""
+
+#: templates/admin/dashboard.php:61
+msgid "Discovery reads every site of this network (read-only) and stores a snapshot in the Fleet Manager inventory. It runs daily in the background and can be started at any time."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:120
+msgid "Discovery running"
+msgstr ""
+
+#: templates/admin/health.php:236
+msgid "Disk space"
+msgstr ""
+
+#: templates/admin/diagnostics.php:27
+msgid "Download report"
+msgstr ""
+
+#: src/Admin/Help.php:90
+msgid "Each indicator is counted across the fleet and grouped as Reliability, Security, Performance or Updates. Click a count to see exactly those sites."
+msgstr ""
+
+#: templates/admin/health.php:107
+msgid "Each row counts the sites in each state."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:225
+msgid "Edit"
+msgstr ""
+
+#: templates/admin/user-detail.php:52
+msgid "Edit account (Network Admin)"
+msgstr ""
+
+#: templates/admin/console.php:558
+msgid "Edit site"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:184
+msgid "Enabled."
+msgstr ""
+
+#: src/Admin/Help.php:127
+msgid "Entries cannot be edited and are purged after the retention period set in Settings."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:99 templates/admin/report-print.php:99
+msgid "Environment"
+msgstr ""
+
+#: src/Health/Health.php:59 src/Reporting/CsvExporter.php:243 src/Reporting/CsvExporter.php:367 templates/admin/health.php:115 templates/admin/report-print.php:84 templates/admin/reports.php:331
+msgid "Error"
+msgstr ""
+
+#. translators: %s: Number.
+#: src/Notifications/Notifier.php:219
+msgid "Errors: %s"
+msgstr ""
+
+#: src/Admin/Help.php:63
+msgid "Every change Fleet Manager makes — updates, activations, memberships, settings — checks your capabilities, verifies a nonce, validates the target and is written to the operation log, including refusals."
+msgstr ""
+
+#: src/Health/Checks/ActivePluginsCheck.php:88
+msgid "Every one of them runs on every request; retiring unused plugins is usually the cheapest speed-up."
+msgstr ""
+
+#: src/Admin/Help.php:126
+msgid "Every state-changing operation, including ones that were refused: \"Denied\" means a missing capability, \"Rejected\" means a failed security check or an invalid target, \"Failed\" means WordPress reported an error."
+msgstr ""
+
+#: templates/admin/log.php:31
+msgid "Every update and activation change made through Fleet Manager, including refused and denied attempts. Entries cannot be edited."
+msgstr ""
+
+#: templates/admin/reports.php:296
+msgid "Everything is up to date."
+msgstr ""
+
+#: src/Admin/Help.php:62
+msgid "Everything you see is read from that inventory, which is why the screens are fast on large networks. \"Synced\" tells you how fresh it is, and you can refresh it at any time."
+msgstr ""
+
+#: templates/admin/reports.php:190
+msgid "Export"
+msgstr ""
+
+#: src/Admin/Help.php:118
+msgid "Export any of it as CSV, or open the printable report and use your browser's \"Save as PDF\"."
+msgstr ""
+
+#: templates/admin/partials/extensions-head.php:63
+msgid "Extension type"
+msgstr ""
+
+#: src/Operations/Operation.php:96
+msgid "Failed"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:331
+msgid "File"
+msgstr ""
+
+#: src/Operations/UpdateEnvironment.php:32
+msgid "File changes are disabled on this installation (DISALLOW_FILE_MODS), so updates cannot be installed from here."
+msgstr ""
+
+#: src/Health/Checks/FileEditingCheck.php:36
+msgid "File editing"
+msgstr ""
+
+#: templates/admin/site-extensions.php:37
+msgid "Files missing"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:206
+msgid "Filters"
+msgstr ""
+
+#: src/Admin/Help.php:82
+msgid "Filters, search, sorting and pagination are plain links, so any view can be bookmarked or shared."
+msgstr ""
+
+#: src/Admin/Admin.php:127 templates/admin/health.php:35 templates/admin/health.php:42
+msgid "Fleet Health"
+msgstr ""
+
+#: src/Admin/Admin.php:96 src/Admin/Admin.php:97 src/Admin/Widgets.php:59 src/Admin/Widgets.php:71 templates/admin/dashboard.php:28
+msgid "Fleet Manager"
+msgstr ""
+
+#: src/Admin/Admin.php:107
+msgid "Fleet Manager Dashboard"
+msgstr ""
+
+#: src/Admin/Admin.php:196 templates/admin/diagnostics.php:16
+msgid "Fleet Manager Diagnostics"
+msgstr ""
+
+#: src/Admin/Admin.php:186 templates/admin/settings.php:41
+msgid "Fleet Manager Settings"
+msgstr ""
+
+#. translators: %s: User.
+#: src/Operations/Handlers/SettingsHandler.php:127
+msgid "Fleet Manager access was removed from %s."
+msgstr ""
+
+#: src/Admin/Help.php:61
+msgid "Fleet Manager keeps its own inventory of the network. Site discovery reads every site (read-only) and stores a snapshot; the inventory then updates in real time as sites, plugins, themes and memberships change."
+msgstr ""
+
+#: templates/admin/user-detail.php:249
+msgid "Fleet Manager shows no passwords, password hashes, sign-in tokens or application passwords."
+msgstr ""
+
+#. translators: 1: Network name, 2: Network address.
+#: src/Notifications/Notifier.php:211
+msgid "Fleet report for %1$s (%2$s)"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:169
+msgid "From"
+msgstr ""
+
+#: templates/admin/reports.php:266
+msgid "From %1$s snapshots since %2$s."
+msgstr ""
+
+#. translators: %s: Relative time, e.g. "5 minutes ago".
+#: templates/admin/health.php:47
+msgid "From the inventory synced %s."
+msgstr ""
+
+#: src/Notifications/Notifier.php:244
+msgid "Full report:"
+msgstr ""
+
+#: templates/admin/report-print.php:40 templates/admin/reports.php:121
+msgid "Generated %s"
+msgstr ""
+
+#: templates/admin/settings.php:204
+msgid "Give someone access"
+msgstr ""
+
+#: templates/admin/console.php:399
+msgid "Go to the first page"
+msgstr ""
+
+#: templates/admin/settings.php:220
+msgid "Grant access"
+msgstr ""
+
+#: src/Health/Checks/HttpsCheck.php:35 src/Reporting/CsvExporter.php:284 templates/admin/health.php:250
+msgid "HTTPS"
+msgstr ""
+
+#: templates/admin/report-print.php:50
+msgid "Headline figures"
+msgstr ""
+
+#: src/Admin/Admin.php:128 src/Admin/Help.php:88 src/Reporting/CsvExporter.php:280 templates/admin/console.php:285 templates/admin/console.php:383 templates/admin/console.php:435 templates/admin/report-print.php:148
+msgid "Health"
+msgstr ""
+
+#: templates/admin/report-print.php:79 templates/admin/reports.php:203
+msgid "Health distribution"
+msgstr ""
+
+#: templates/admin/console.php:509
+msgid "Health indicators"
+msgstr ""
+
+#: templates/admin/console.php:105
+msgid "Health: %s"
+msgstr ""
+
+#: src/Health/Health.php:57 src/Reporting/CsvExporter.php:241 src/Reporting/CsvExporter.php:365 templates/admin/reports.php:93 templates/admin/reports.php:329
+msgid "Healthy"
+msgstr ""
+
+#: templates/admin/reports.php:239
+msgid "Healthy sites"
+msgstr ""
+
+#. translators: %s: Number.
+#: src/Notifications/Notifier.php:217
+msgid "Healthy: %s"
+msgstr ""
+
+#: src/Admin/View.php:153
+msgid "Hidden from search engines"
+msgstr ""
+
+#: templates/admin/settings.php:77
+msgid "History"
+msgstr ""
+
+#: src/Health/Category.php:66
+msgid "How far behind the installed components are."
+msgstr ""
+
+#: src/Admin/Help.php:59
+msgid "How it works"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:218
+msgid "How late an event counts as overdue."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:219
+msgid "How late means cron is broken."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:216
+msgid "How long log entries are kept."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:215
+msgid "How long snapshots are kept."
+msgstr ""
+
+#: templates/admin/settings.php:64
+msgid "How often"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:212
+msgid "How often discovery runs."
+msgstr ""
+
+#: src/Admin/RequirementNotice.php:101 src/Core/Activator.php:57
+msgid "How to create a network"
+msgstr ""
+
+#: src/Admin/SitesListTable.php:78
+msgid "ID"
+msgstr ""
+
+#: templates/admin/user-detail.php:216
+msgid "If the chosen site does not have that role, the request is refused and nothing changes."
+msgstr ""
+
+#: templates/admin/report-print.php:28
+msgid "In the print dialog, choose \"Save as PDF\" as the destination."
+msgstr ""
+
+#: templates/admin/extensions.php:33 templates/admin/extensions.php:60
+msgid "In use"
+msgstr ""
+
+#: templates/admin/site-extensions.php:36
+msgid "Inactive"
+msgstr ""
+
+#: templates/admin/settings.php:95
+msgid "Include sites needing updates"
+msgstr ""
+
+#: templates/admin/settings.php:94
+msgid "Include sites with errors"
+msgstr ""
+
+#: templates/admin/health.php:114 templates/admin/health.php:137 templates/admin/report-print.php:84
+msgid "Indicator"
+msgstr ""
+
+#: templates/admin/settings.php:132
+msgid "Indicator thresholds"
+msgstr ""
+
+#. translators: 1: Indicator name, 2: State, e.g. "(error)".
+#: templates/admin/console.php:119
+msgid "Indicator: %1$s %2$s"
+msgstr ""
+
+#. translators: %s: Indicator name.
+#: src/Reporting/CsvExporter.php:260
+msgid "Indicator: %s (errors / needs attention)"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:116
+msgid "Indicators"
+msgstr ""
+
+#: templates/admin/health.php:106
+msgid "Indicators across the fleet"
+msgstr ""
+
+#: src/Health/Category.php:67
+msgid "Indicators added by other plugins."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:335
+msgid "Installable from Fleet Manager"
+msgstr ""
+
+#: templates/admin/report-print.php:121 templates/admin/reports.php:289 templates/admin/reports.php:307
+msgid "Installed"
+msgstr ""
+
+#: templates/admin/extensions.php:64
+msgid "Installed plugins"
+msgstr ""
+
+#: templates/admin/extensions.php:57
+msgid "Installed themes"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:332
+msgid "Installed version"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:168
+msgid "Inventory"
+msgstr ""
+
+#. translators: 1: Date and time, 2: Relative time, e.g. "5 minutes ago".
+#: src/Admin/SitesPage.php:86
+msgid "Inventory from site discovery on %1$s (%2$s). Changes made since then are picked up automatically for most site settings."
+msgstr ""
+
+#: templates/admin/console.php:156 templates/admin/reports.php:130
+msgid "Inventory not synced yet"
+msgstr ""
+
+#. translators: %s: Relative time, e.g. "5 minutes ago".
+#. translators: %s: Relative time.
+#: templates/admin/console.php:155 templates/admin/reports.php:129
+msgid "Inventory synced %s"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:291 templates/admin/report-print.php:151
+msgid "Issues"
+msgstr ""
+
+#: src/Core/Activator.php:39
+msgid "It manages the whole network and cannot run on a single site of it. Activate it from Network Admin → Plugins instead."
+msgstr ""
+
+#: templates/admin/report-print.php:119 templates/admin/reports.php:287 templates/admin/reports.php:300
+msgid "Item"
+msgstr ""
+
+#: templates/admin/settings.php:80
+msgid "Keep log entries"
+msgstr ""
+
+#: templates/admin/settings.php:81
+msgid "Keep snapshots"
+msgstr ""
+
+#: templates/admin/users.php:169 templates/admin/users.php:235
+msgid "Last activity"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:121
+msgid "Last activity (UTC)"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:124
+msgid "Last digest"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:119
+msgid "Last discovery"
+msgstr ""
+
+#. translators: 1: Number of sites, 2: Relative time, e.g. "5 minutes ago", 3: Duration in seconds.
+#: templates/admin/dashboard.php:44
+msgid "Last run found %1$s site, %2$s (took %3$s s)."
+msgid_plural "Last run found %1$s sites, %2$s (took %3$s s)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Reporting/CsvExporter.php:292
+msgid "Last synced (UTC)"
+msgstr ""
+
+#: src/Admin/SitesListTable.php:85
+msgid "Last updated"
+msgstr ""
+
+#: templates/admin/settings.php:143
+msgid "Loaded on every page view of a site."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:115
+msgid "Log entries"
+msgstr ""
+
+#: src/Network/NetworkInfo.php:67
+msgid "Logged-in users may register sites"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:116
+msgid "Login"
+msgstr ""
+
+#: templates/admin/users.php:93
+msgid "Login, name or e-mail"
+msgstr ""
+
+#: templates/admin/settings.php:74
+msgid "Lower this if discovery times out on a large network."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:112
+msgid "MISSING"
+msgstr ""
+
+#: templates/admin/settings.php:96
+msgid "Mail immediately when an operation fails"
+msgstr ""
+
+#: src/Admin/View.php:150 templates/admin/console.php:428 templates/admin/dashboard.php:167
+msgid "Main site"
+msgstr ""
+
+#: templates/admin/users.php:241
+msgid "Manage"
+msgstr ""
+
+#: src/Core/Capabilities.php:103
+msgid "Manage Fleet Manager access"
+msgstr ""
+
+#: src/Core/Capabilities.php:100
+msgid "Manage user access to sites"
+msgstr ""
+
+#: templates/admin/site-extensions.php:155
+msgid "Managed network-wide"
+msgstr ""
+
+#: templates/admin/health.php:202 templates/admin/report-print.php:104
+msgid "MariaDB"
+msgstr ""
+
+#: templates/admin/user-detail.php:237 templates/admin/users.php:126
+msgid "Marked as deleted"
+msgstr ""
+
+#: templates/admin/user-detail.php:235 templates/admin/users.php:125
+msgid "Marked as spam"
+msgstr ""
+
+#: src/Admin/View.php:156
+msgid "Mature"
+msgstr ""
+
+#: templates/admin/user-detail.php:101
+msgid "Member of %s site"
+msgid_plural "Member of %s sites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/DiagnosticsPage.php:106
+msgid "Memory limit"
+msgstr ""
+
+#: src/Health/Checks/MemoryLimitCheck.php:33
+msgid "Memory limits"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:223
+msgid "Memory thresholds."
+msgstr ""
+
+#: templates/admin/settings.php:142
+msgid "Memory warning below"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:172
+msgid "Message"
+msgstr ""
+
+#: templates/admin/diagnostics.php:71 templates/admin/diagnostics.php:79
+msgid "Methods"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:229
+msgid "Metric"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:214
+msgid "Minimum time between automatic snapshots."
+msgstr ""
+
+#: templates/admin/settings.php:82
+msgid "Minimum time between automatic snapshots. 0 captures one after every discovery run."
+msgstr ""
+
+#: templates/admin/console.php:471
+msgid "Missing or broken"
+msgstr ""
+
+#: templates/admin/site-extensions.php:74
+msgid "Missing plugin files"
+msgstr ""
+
+#: templates/admin/report-print.php:82 templates/admin/reports.php:206
+msgid "Most common issues"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:103
+msgid "Multisite"
+msgstr ""
+
+#: src/Admin/Help.php:44
+msgid "Multisite Fleet Manager"
+msgstr ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:79
+msgid "Multisite Fleet Manager cannot change its own activation."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:54
+msgid "Multisite Fleet Manager cannot update itself. Use Network Admin → Updates."
+msgstr ""
+
+#: src/Core/Requirements.php:112
+msgid "Multisite Fleet Manager is inactive."
+msgstr ""
+
+#: src/Admin/Admin.php:322
+msgid "Multisite Fleet Manager is network active."
+msgstr ""
+
+#: src/Admin/RequirementNotice.php:56
+msgid "Multisite Fleet Manager is not running."
+msgstr ""
+
+#: src/Core/Activator.php:38
+msgid "Multisite Fleet Manager must be network activated."
+msgstr ""
+
+#. translators: 1: Required PHP version, 2: Current PHP version.
+#: src/Core/Requirements.php:97
+msgid "Multisite Fleet Manager requires PHP %1$s or higher. Your server is running PHP %2$s."
+msgstr ""
+
+#. translators: 1: Required WordPress version, 2: Current WordPress version.
+#: src/Core/Requirements.php:106
+msgid "Multisite Fleet Manager requires WordPress %1$s or higher. You are running WordPress %2$s."
+msgstr ""
+
+#: src/Core/Activator.php:31
+msgid "Multisite Fleet Manager requires WordPress Multisite."
+msgstr ""
+
+#: src/Admin/RequirementNotice.php:88
+msgid "Multisite Fleet Manager requires WordPress Multisite. This installation is a single site, so there is no network to manage and the plugin stays inactive. It does not emulate a network."
+msgstr ""
+
+#. translators: %s: Link to the Network Setup screen.
+#: src/Admin/RequirementNotice.php:94
+msgid "Multisite is allowed on this installation. Continue in %s, then network activate Multisite Fleet Manager."
+msgstr ""
+
+#: templates/admin/health.php:202 templates/admin/report-print.php:104
+msgid "MySQL"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:117 src/Reporting/CsvExporter.php:277 src/Reporting/CsvExporter.php:330
+msgid "Name"
+msgstr ""
+
+#: templates/admin/console.php:280
+msgid "Name, address or theme"
+msgstr ""
+
+#: templates/admin/extensions.php:86
+msgid "Name, file or author"
+msgstr ""
+
+#: templates/admin/reports.php:332
+msgid "Needing updates"
+msgstr ""
+
+#: src/Health/Health.php:58
+msgid "Needs Attention"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:242 src/Reporting/CsvExporter.php:366 templates/admin/health.php:116 templates/admin/report-print.php:84
+msgid "Needs attention"
+msgstr ""
+
+#. translators: %s: Number.
+#: src/Notifications/Notifier.php:218
+msgid "Needs attention: %s"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:233 templates/admin/dashboard.php:165
+msgid "Network"
+msgstr ""
+
+#: src/Admin/Admin.php:166 templates/admin/reports.php:108 templates/admin/reports.php:115
+msgid "Network Report"
+msgstr ""
+
+#: src/Admin/Admin.php:117 templates/admin/console.php:141
+msgid "Network Site Dashboard"
+msgstr ""
+
+#: src/Admin/Admin.php:156 templates/admin/user-detail.php:50 templates/admin/users.php:34 templates/admin/users.php:41
+msgid "Network Users"
+msgstr ""
+
+#: templates/admin/extensions.php:39 templates/admin/extensions.php:66 templates/admin/extensions.php:254 templates/admin/site-extensions.php:35 templates/admin/site-extensions.php:58
+msgid "Network active"
+msgstr ""
+
+#: templates/admin/extensions.php:32 templates/admin/extensions.php:59 templates/admin/extensions.php:252
+msgid "Network enabled"
+msgstr ""
+
+#: templates/admin/extensions.php:188
+msgid "Network only"
+msgstr ""
+
+#: src/Operations/Handlers/SnapshotHandler.php:50 templates/admin/report-print.php:32
+msgid "Network report"
+msgstr ""
+
+#: src/Operations/Handlers/SettingsHandler.php:101
+msgid "Network settings"
+msgstr ""
+
+#: templates/admin/user-detail.php:231
+msgid "Network status"
+msgstr ""
+
+#: templates/admin/user-detail.php:62
+msgid "Network user"
+msgstr ""
+
+#: templates/admin/dashboard.php:176 templates/admin/report-print.php:108 templates/admin/users.php:26
+msgid "Network users"
+msgstr ""
+
+#: templates/admin/dashboard.php:179
+msgid "Network-activated plugins"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:104
+msgid "Networks"
+msgstr ""
+
+#: templates/admin/dashboard.php:191
+msgid "Networks in this installation"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:170
+msgid "Never built. Run site discovery."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:123
+msgid "Next digest"
+msgstr ""
+
+#. translators: %s: Date and time.
+#: templates/admin/settings.php:112
+msgid "Next digest: %s"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:122
+msgid "Next discovery"
+msgstr ""
+
+#: templates/admin/console.php:581 templates/admin/extensions.php:301 templates/admin/log.php:175 templates/admin/users.php:262
+msgid "Next page"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:143 src/Reporting/CsvExporter.php:306 src/Reporting/CsvExporter.php:347 templates/admin/user-detail.php:230
+msgid "No"
+msgstr ""
+
+#: src/Health/Checks/ActiveThemeCheck.php:55 templates/admin/site-extensions.php:206
+msgid "No active theme recorded."
+msgstr ""
+
+#: templates/admin/settings.php:113
+msgid "No digest is scheduled."
+msgstr ""
+
+#: templates/admin/reports.php:208
+msgid "No indicator is failing on any site."
+msgstr ""
+
+#: templates/admin/console.php:252 templates/admin/dashboard.php:99
+msgid "No inventory yet"
+msgstr ""
+
+#: src/Admin/Widgets.php:89
+msgid "No inventory yet. Run site discovery to see the network at a glance."
+msgstr ""
+
+#: templates/admin/log.php:104
+msgid "No operations recorded."
+msgstr ""
+
+#: src/Users/UserDirectory.php:337
+msgid "No role on that site"
+msgstr ""
+
+#: src/Operations/Handlers/SettingsHandler.php:86
+msgid "No settings were submitted."
+msgstr ""
+
+#: templates/admin/partials/user-activity.php:22
+msgid "No sign-in recorded since Fleet Manager was activated"
+msgstr ""
+
+#: templates/admin/users.php:220
+msgid "No site"
+msgstr ""
+
+#: templates/admin/health.php:277
+msgid "No sites in the inventory yet."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:194
+msgid "No sites in the inventory yet. Run site discovery from the dashboard."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:197
+msgid "No sites match the current filter."
+msgstr ""
+
+#: templates/admin/console.php:356 templates/admin/console.php:401
+msgid "No sites match these filters."
+msgstr ""
+
+#: templates/admin/reports.php:337
+msgid "No snapshots yet."
+msgstr ""
+
+#: src/Health/Checks/StorageCheck.php:131
+msgid "No storage figures are available: this network enforces no upload quota and the host does not report free disk space."
+msgstr ""
+
+#: templates/admin/dashboard.php:229
+msgid "No theme data."
+msgstr ""
+
+#: templates/admin/console.php:165 templates/admin/console.php:483 templates/admin/console.php:483
+msgid "No update data yet"
+msgstr ""
+
+#: src/Health/Checks/OutdatedComponentsCheck.php:72
+msgid "No update data yet, so how current this site is cannot be judged."
+msgstr ""
+
+#: src/Health/Checks/PluginUpdatesCheck.php:56 src/Health/Checks/ThemeUpdatesCheck.php:55
+msgid "No update data yet. WordPress checks for updates twice a day."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:65
+msgid "No update is available for this plugin."
+msgstr ""
+
+#: src/Operations/Handlers/ThemeUpdateHandler.php:59
+msgid "No update is available for this theme."
+msgstr ""
+
+#: templates/admin/users.php:152 templates/admin/users.php:178
+msgid "No users match these filters."
+msgstr ""
+
+#: templates/admin/settings.php:174
+msgid "Nobody outside the super admins has Fleet Manager access."
+msgstr ""
+
+#: templates/admin/users.php:205
+msgid "None"
+msgstr ""
+
+#: templates/admin/user-detail.php:239
+msgid "Normal"
+msgstr ""
+
+#: templates/admin/extensions.php:41 templates/admin/extensions.php:68 templates/admin/extensions.php:269
+msgid "Not active anywhere"
+msgstr ""
+
+#: templates/admin/report-print.php:107
+msgid "Not available"
+msgstr ""
+
+#: templates/admin/health.php:262
+msgid "Not available on this server"
+msgstr ""
+
+#: src/Health/Health.php:61 src/Reporting/CsvExporter.php:244 src/Reporting/CsvExporter.php:368
+msgid "Not checked"
+msgstr ""
+
+#: templates/admin/console.php:534
+msgid "Not checked yet. Refresh the inventory to evaluate this site."
+msgstr ""
+
+#: templates/admin/site-extensions.php:180
+msgid "Not installed"
+msgstr ""
+
+#: templates/admin/extensions.php:252
+msgid "Not network enabled"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:163
+msgid "Not queued. Save the settings to reschedule it."
+msgstr ""
+
+#: templates/admin/health.php:240
+msgid "Not reported by this host"
+msgstr ""
+
+#: templates/admin/partials/user-activity.php:21
+msgid "Not seen yet"
+msgstr ""
+
+#: templates/admin/extensions.php:250
+msgid "Not used"
+msgstr ""
+
+#: templates/admin/extensions.php:34
+msgid "Not used by any site"
+msgstr ""
+
+#: templates/admin/settings.php:97
+msgid "Nothing is sent while the digest is off. A digest with nothing to report is skipped."
+msgstr ""
+
+#: templates/admin/extensions.php:125 templates/admin/extensions.php:160
+msgid "Nothing matches these filters."
+msgstr ""
+
+#: src/Admin/Actions.php:198
+msgid "Nothing was selected."
+msgstr ""
+
+#: templates/admin/settings.php:86 templates/admin/settings.php:92
+msgid "Notifications"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:107
+msgid "Object cache"
+msgstr ""
+
+#: templates/admin/health.php:232
+msgid "Off"
+msgstr ""
+
+#: templates/admin/reports.php:344
+msgid "On request"
+msgstr ""
+
+#: templates/admin/site-extensions.php:115 templates/admin/site-extensions.php:134
+msgid "On this site"
+msgstr ""
+
+#: src/Admin/Help.php:81
+msgid "One row per site: lifecycle status, health, WordPress version, active theme and pending updates. Health is Healthy, Needs Attention or Error, rolled up from the indicators shown under Details."
+msgstr ""
+
+#: templates/admin/settings.php:218
+msgid "Only read-only capabilities and running discovery can be delegated. Updates, user management and settings stay with super admins."
+msgstr ""
+
+#: src/Admin/Widgets.php:91
+msgid "Open Fleet Manager"
+msgstr ""
+
+#: src/Admin/Admin.php:324
+msgid "Open the dashboard and discover your sites"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:165 templates/admin/log.php:50 templates/admin/log.php:94 templates/admin/log.php:122
+msgid "Operation"
+msgstr ""
+
+#: src/Admin/Admin.php:176 src/Admin/Admin.php:177 templates/admin/log.php:23 templates/admin/log.php:30
+msgid "Operation Log"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:121
+msgid "Operation lock"
+msgstr ""
+
+#: src/Admin/Help.php:124 templates/admin/partials/extensions-head.php:40 templates/admin/users.php:49
+msgid "Operation log"
+msgstr ""
+
+#: templates/admin/settings.php:80
+msgid "Operation log entries older than this are deleted daily."
+msgstr ""
+
+#: src/Notifications/Notifier.php:163
+msgid "Operation log:"
+msgstr ""
+
+#: src/Rest/SitesController.php:240
+msgid "Operational health indicators only. This is not a security scan."
+msgstr ""
+
+#: templates/admin/health.php:99
+msgid "Operational health: reliability, performance, configuration and how current the code is, read from the network itself. The security group is a set of configuration indicators only."
+msgstr ""
+
+#: src/Admin/Help.php:45
+msgid "Operational management for one WordPress Multisite network."
+msgstr ""
+
+#: src/Reporting/ReportBuilder.php:136
+msgid "Operational reporting from the Fleet Manager inventory. The health indicators are not a security scan."
+msgstr ""
+
+#: templates/admin/partials/operation-results.php:26
+msgid "Operations finished: %1$s succeeded, %2$s did not."
+msgstr ""
+
+#: templates/admin/user-detail.php:55
+msgid "Operations for this user"
+msgstr ""
+
+#: templates/admin/site-extensions.php:90
+msgid "Operations on this site"
+msgstr ""
+
+#: src/Health/Category.php:50
+msgid "Other"
+msgstr ""
+
+#: src/Health/Checks/OutdatedComponentsCheck.php:34
+msgid "Outdated components"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:228
+msgid "Outdated components before it is an error."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:288
+msgid "Overdue tasks"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:101 templates/admin/dashboard.php:201 templates/admin/health.php:193 templates/admin/report-print.php:103
+msgid "PHP"
+msgstr ""
+
+#. translators: 1: Current PHP version, 2: Required PHP version.
+#: src/Health/Checks/PhpVersionCheck.php:58
+msgid "PHP %1$s is below the %2$s that WordPress requires. Ask your host to upgrade."
+msgstr ""
+
+#. translators: 1: Current PHP version, 2: Recommended PHP version.
+#: src/Health/Checks/PhpVersionCheck.php:65
+msgid "PHP %1$s is older than the %2$s recommended here. Newer versions are faster and stay supported longer."
+msgstr ""
+
+#: src/Health/Checks/PhpVersionCheck.php:72
+msgid "PHP %s is current."
+msgstr ""
+
+#. translators: 1: PHP memory limit, 2: WP_MEMORY_LIMIT.
+#: src/Health/Checks/MemoryLimitCheck.php:87
+msgid "PHP allows %1$s; WordPress asks for %2$s."
+msgstr ""
+
+#. translators: %s: PHP memory limit.
+#: src/Health/Checks/MemoryLimitCheck.php:93
+msgid "PHP allows %s."
+msgstr ""
+
+#: templates/admin/settings.php:142
+msgid "PHP memory_limit under this is flagged."
+msgstr ""
+
+#: src/Health/Checks/PhpVersionCheck.php:32 src/Reporting/CsvExporter.php:235
+msgid "PHP version"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:225
+msgid "PHP version treated as current."
+msgstr ""
+
+#: templates/admin/extensions.php:220
+msgid "Package unavailable (licence?)"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:287
+msgid "Pages"
+msgstr ""
+
+#: templates/admin/extensions.php:291 templates/admin/log.php:165
+msgid "Pagination"
+msgstr ""
+
+#: templates/admin/site-extensions.php:176
+msgid "Parent theme"
+msgstr ""
+
+#: templates/admin/extensions.php:247
+msgid "Parent theme on %s site"
+msgid_plural "Parent theme on %s sites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/admin/health.php:117
+msgid "Passed"
+msgstr ""
+
+#: src/Admin/Widgets.php:136 templates/admin/report-print.php:115 templates/admin/reports.php:275
+msgid "Pending updates"
+msgstr ""
+
+#. translators: 1: Plugin updates, 2: Theme updates.
+#: src/Notifications/Notifier.php:223
+msgid "Pending updates: %1$s plugin, %2$s theme"
+msgstr ""
+
+#: templates/admin/console.php:330 templates/admin/extensions.php:98 templates/admin/users.php:130
+msgid "Per page"
+msgstr ""
+
+#: templates/admin/settings.php:144
+msgid "Per-site database size that counts as large."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:221
+msgid "Per-site database size thresholds."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:213
+msgid "Per-site member limit before memberships are skipped."
+msgstr ""
+
+#: src/Health/Category.php:47
+msgid "Performance"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:109 src/Reporting/CsvExporter.php:341 templates/admin/extensions.php:147 templates/admin/extensions.php:182 templates/admin/report-print.php:130 templates/admin/reports.php:306 templates/admin/site-extensions.php:114 templates/admin/site-extensions.php:128
+msgid "Plugin"
+msgstr ""
+
+#: src/Operations/Operation.php:75
+msgid "Plugin activation"
+msgstr ""
+
+#: templates/admin/partials/extensions-head.php:35
+msgid "Plugin and theme files are shared by every site of the network: an update applies to all of them. Activation is per site."
+msgstr ""
+
+#: src/Admin/Help.php:99
+msgid "Plugin and theme files are shared by the whole network, so an update applies to every site. Activation is per site: use a site's own view to turn a plugin on or off there."
+msgstr ""
+
+#: src/Operations/Operation.php:76
+msgid "Plugin deactivation"
+msgstr ""
+
+#: src/Health/Checks/MissingPluginsCheck.php:28
+msgid "Plugin files"
+msgstr ""
+
+#: templates/admin/extensions.php:274 templates/admin/site-extensions.php:158
+msgid "Plugin files are shared: this updates the plugin on every site of the network. Continue?"
+msgstr ""
+
+#: src/Operations/Operation.php:73
+msgid "Plugin update"
+msgstr ""
+
+#: src/Health/Checks/PluginUpdatesCheck.php:28 src/Reporting/CsvExporter.php:247 src/Reporting/CsvExporter.php:281 src/Reporting/CsvExporter.php:370 templates/admin/console.php:36 templates/admin/console.php:77 templates/admin/console.php:386 templates/admin/console.php:481 templates/admin/report-print.php:56 templates/admin/report-print.php:149 templates/admin/reports.php:67
+msgid "Plugin updates"
+msgstr ""
+
+#: templates/admin/log.php:46
+msgid "Plugin, theme or message"
+msgstr ""
+
+#: templates/admin/extensions.php:75 templates/admin/partials/extensions-head.php:20 templates/admin/site-extensions.php:109
+msgid "Plugins"
+msgstr ""
+
+#: src/Admin/Admin.php:137 src/Admin/Admin.php:138 src/Admin/Help.php:97 templates/admin/partials/extensions-head.php:24 templates/admin/partials/extensions-head.php:31
+msgid "Plugins & Themes"
+msgstr ""
+
+#: templates/admin/console.php:551
+msgid "Plugins & themes"
+msgstr ""
+
+#. translators: 1: Site address, 2: Site ID.
+#: templates/admin/site-extensions.php:44
+msgid "Plugins and theme of %1$s (site #%2$s). Activation changes apply to this site only; updates apply to the whole network."
+msgstr ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:65
+msgid "Plugins cannot be activated on a deactivated or spam site."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:286
+msgid "Posts"
+msgstr ""
+
+#: templates/admin/console.php:580 templates/admin/extensions.php:300 templates/admin/log.php:174 templates/admin/users.php:261
+msgid "Previous page"
+msgstr ""
+
+#: templates/admin/report-print.php:26
+msgid "Print or save as PDF"
+msgstr ""
+
+#: templates/admin/reports.php:144
+msgid "Printable report"
+msgstr ""
+
+#: templates/admin/report-print.php:177
+msgid "Produced by %s."
+msgstr ""
+
+#: templates/admin/dashboard.php:186
+msgid "Published content"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:163
+msgid "Queued on the network's main site."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:224
+msgid "Quota and disk thresholds."
+msgstr ""
+
+#: templates/admin/diagnostics.php:65
+msgid "REST routes"
+msgstr ""
+
+#: src/Core/Capabilities.php:97
+msgid "Read the operation log"
+msgstr ""
+
+#: templates/admin/reports.php:319
+msgid "Recent snapshots"
+msgstr ""
+
+#: templates/admin/dashboard.php:237
+msgid "Recently registered"
+msgstr ""
+
+#: templates/admin/dashboard.php:243
+msgid "Recently updated"
+msgstr ""
+
+#: templates/admin/settings.php:119
+msgid "Recipients"
+msgstr ""
+
+#: templates/admin/settings.php:135
+msgid "Recommended PHP"
+msgstr ""
+
+#: templates/admin/console.php:186 templates/admin/dashboard.php:71 templates/admin/health.php:59
+msgid "Refresh inventory"
+msgstr ""
+
+#: templates/admin/console.php:253
+msgid "Refresh the inventory to discover the sites of this network and evaluate their health."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:84 templates/admin/users.php:170 templates/admin/users.php:238
+msgid "Registered"
+msgstr ""
+
+#: templates/admin/user-detail.php:73
+msgid "Registered %s"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:122
+msgid "Registered (UTC)"
+msgstr ""
+
+#: templates/admin/dashboard.php:173
+msgid "Registration"
+msgstr ""
+
+#: src/Operations/Operation.php:97
+msgid "Rejected"
+msgstr ""
+
+#: src/Health/Category.php:46
+msgid "Reliability"
+msgstr ""
+
+#: templates/admin/settings.php:194 templates/admin/user-detail.php:167
+msgid "Remove"
+msgstr ""
+
+#: templates/admin/user-detail.php:164
+msgid "Remove this user from the site? Their content stays, but they lose access."
+msgstr ""
+
+#: templates/admin/settings.php:190
+msgid "Remove this user's Fleet Manager access?"
+msgstr ""
+
+#: src/Admin/Widgets.php:130 templates/admin/diagnostics.php:104
+msgid "Report"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:232
+msgid "Report generated (UTC)"
+msgstr ""
+
+#: src/Operations/Operation.php:80
+msgid "Report snapshot"
+msgstr ""
+
+#: templates/admin/settings.php:81
+msgid "Report snapshots older than this are deleted daily."
+msgstr ""
+
+#: src/Admin/Admin.php:167 src/Admin/Help.php:115
+msgid "Reports"
+msgstr ""
+
+#: templates/admin/diagnostics.php:72 templates/admin/diagnostics.php:80
+msgid "Requires"
+msgstr ""
+
+#. translators: %s: PHP version.
+#: templates/admin/extensions.php:213
+msgid "Requires PHP %s"
+msgstr ""
+
+#. translators: %s: WordPress version.
+#: templates/admin/extensions.php:215
+msgid "Requires WordPress %s"
+msgstr ""
+
+#: templates/admin/console.php:341 templates/admin/extensions.php:108 templates/admin/log.php:70 templates/admin/users.php:140
+msgid "Reset"
+msgstr ""
+
+#: src/Health/Category.php:64
+msgid "Resources and settings that affect how fast the site runs."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:166 templates/admin/log.php:59 templates/admin/log.php:93 templates/admin/log.php:119
+msgid "Result"
+msgstr ""
+
+#: templates/admin/console.php:231
+msgid "Review updates"
+msgstr ""
+
+#: templates/admin/user-detail.php:111 templates/admin/user-detail.php:139 templates/admin/user-detail.php:201 templates/admin/users.php:97
+msgid "Role"
+msgstr ""
+
+#: src/Operations/Operation.php:79
+msgid "Role change"
+msgstr ""
+
+#: templates/admin/user-detail.php:150
+msgid "Role on %s"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:120 templates/admin/users.php:166 templates/admin/users.php:203
+msgid "Roles"
+msgstr ""
+
+#: templates/admin/users.php:71
+msgid "Roles and site memberships appear after the first site discovery. Run it from the Fleet Manager dashboard."
+msgstr ""
+
+#: templates/admin/diagnostics.php:70 templates/admin/diagnostics.php:78
+msgid "Route"
+msgstr ""
+
+#: templates/admin/dashboard.php:50
+msgid "Run automatically."
+msgstr ""
+
+#: src/Core/Capabilities.php:95
+msgid "Run site discovery"
+msgstr ""
+
+#: templates/admin/health.php:48
+msgid "Run site discovery to build these figures."
+msgstr ""
+
+#: templates/admin/console.php:131
+msgid "Running plugin: %s"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:118
+msgid "Runs and locks"
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:59
+msgid "SCRIPT_DEBUG loads unminified assets, which slows pages down."
+msgstr ""
+
+#: templates/admin/settings.php:151
+msgid "Save settings"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:161
+msgid "Scheduled discovery"
+msgstr ""
+
+#: src/Health/Checks/CronCheck.php:34 templates/admin/health.php:205
+msgid "Scheduled tasks"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:111
+msgid "Schema"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:146
+msgid "Schema version"
+msgstr ""
+
+#: templates/admin/console.php:277 templates/admin/extensions.php:83 templates/admin/log.php:43 templates/admin/users.php:90
+msgid "Search"
+msgstr ""
+
+#. translators: %s: Search query.
+#: src/Admin/SitesPage.php:75
+msgid "Search results for: %s"
+msgstr ""
+
+#: src/Admin/SitesPage.php:108
+msgid "Search sites"
+msgstr ""
+
+#: templates/admin/console.php:101
+msgid "Search: %s"
+msgstr ""
+
+#: src/Health/Category.php:48
+msgid "Security indicators"
+msgstr ""
+
+#: templates/admin/extensions.php:176
+msgid "Select %s"
+msgstr ""
+
+#: templates/admin/extensions.php:143
+msgid "Select all items with an update"
+msgstr ""
+
+#: templates/admin/diagnostics.php:35
+msgid "Self-checks"
+msgstr ""
+
+#: templates/admin/settings.php:93
+msgid "Send a digest of the fleet"
+msgstr ""
+
+#: templates/admin/settings.php:89
+msgid "Send e-mail"
+msgstr ""
+
+#: src/Admin/Admin.php:187 src/Admin/Help.php:133 templates/admin/settings.php:48
+msgid "Settings"
+msgstr ""
+
+#: src/Operations/Operation.php:81
+msgid "Settings change"
+msgstr ""
+
+#: src/Operations/Handlers/SettingsHandler.php:147
+msgid "Settings saved; nothing changed."
+msgstr ""
+
+#: templates/admin/partials/health-distribution.php:40
+msgid "Share"
+msgstr ""
+
+#: templates/admin/health.php:181
+msgid "Shared environment"
+msgstr ""
+
+#: templates/admin/extensions.php:90
+msgid "Show"
+msgstr ""
+
+#: templates/admin/extensions.php:123
+msgid "Showing %1$s–%2$s of %3$s"
+msgstr ""
+
+#: templates/admin/console.php:351
+msgid "Showing %1$s–%2$s of %3$s sites"
+msgstr ""
+
+#: templates/admin/users.php:150
+msgid "Showing %1$s–%2$s of %3$s users"
+msgstr ""
+
+#: templates/admin/user-detail.php:244
+msgid "Signed in on"
+msgstr ""
+
+#: src/Admin/SitesListTable.php:77 templates/admin/console.php:381 templates/admin/console.php:417 templates/admin/console.php:538 templates/admin/log.php:96 templates/admin/log.php:131 templates/admin/report-print.php:146 templates/admin/user-detail.php:110 templates/admin/user-detail.php:127 templates/admin/user-detail.php:193 templates/admin/users.php:111
+msgid "Site"
+msgstr ""
+
+#: templates/admin/log.php:138
+msgid "Site #%s (deleted)"
+msgstr ""
+
+#: src/Admin/Admin.php:118 src/Admin/Help.php:79 src/Admin/Widgets.php:133 templates/admin/console.php:148 templates/admin/health.php:54 templates/admin/site-extensions.php:86
+msgid "Site Dashboard"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:168 src/Reporting/CsvExporter.php:276 templates/admin/console.php:540
+msgid "Site ID"
+msgstr ""
+
+#: src/Admin/Admin.php:146 src/Admin/Admin.php:147 src/Admin/SitesPage.php:69
+msgid "Site Inventory"
+msgstr ""
+
+#: src/Health/Checks/SiteAddressCheck.php:29
+msgid "Site address"
+msgstr ""
+
+#: templates/admin/dashboard.php:170
+msgid "Site addresses"
+msgstr ""
+
+#: templates/admin/partials/extensions-head.php:84
+msgid "Site counts appear after the first site discovery. Run it from the Fleet Manager dashboard."
+msgstr ""
+
+#: templates/admin/console.php:557
+msgid "Site dashboard"
+msgstr ""
+
+#: src/Health/Checks/SiteDataCheck.php:28
+msgid "Site database"
+msgstr ""
+
+#: templates/admin/settings.php:144
+msgid "Site database above"
+msgstr ""
+
+#: templates/admin/dashboard.php:38
+msgid "Site discovery"
+msgstr ""
+
+#: src/Admin/Notices.php:26
+msgid "Site discovery complete. The inventory is up to date."
+msgstr ""
+
+#: src/Admin/Notices.php:28
+msgid "Site discovery is already running in the background. Check back in a moment."
+msgstr ""
+
+#: src/Sites/DiscoveryInProgressException.php:30
+msgid "Site discovery is already running. Wait for it to finish, then try again."
+msgstr ""
+
+#: src/Admin/Notices.php:27
+msgid "Site discovery made progress but did not finish within the time limit. Run it again to continue; it resumes where it stopped."
+msgstr ""
+
+#: src/Admin/Help.php:150
+msgid "Site inventory"
+msgstr ""
+
+#: templates/admin/settings.php:145
+msgid "Site plugins plus network-activated ones."
+msgstr ""
+
+#: templates/admin/dashboard.php:183
+msgid "Site-level plugin activations"
+msgstr ""
+
+#: src/Admin/Widgets.php:97 src/Reporting/CsvExporter.php:119 src/Reporting/CsvExporter.php:364 templates/admin/console.php:45 templates/admin/console.php:258 templates/admin/dashboard.php:134 templates/admin/partials/health-distribution.php:39 templates/admin/report-print.php:123 templates/admin/report-print.php:142 templates/admin/reports.php:328 templates/admin/user-detail.php:227 templates/admin/users.php:168 templates/admin/users.php:218
+msgid "Sites"
+msgstr ""
+
+#: templates/admin/reports.php:195
+msgid "Sites CSV"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:334 templates/admin/reports.php:291 templates/admin/reports.php:309
+msgid "Sites affected"
+msgstr ""
+
+#: templates/admin/user-detail.php:97
+msgid "Sites and roles"
+msgstr ""
+
+#: src/Network/NetworkInfo.php:68
+msgid "Sites and user accounts"
+msgstr ""
+
+#: templates/admin/settings.php:138
+msgid "Sites below this are flagged. Keep it in step with the versions PHP still supports."
+msgstr ""
+
+#: templates/admin/partials/health-distribution.php:35
+msgid "Sites by health status"
+msgstr ""
+
+#: templates/admin/dashboard.php:127 templates/admin/report-print.php:58
+msgid "Sites by status"
+msgstr ""
+
+#: templates/admin/health.php:28
+msgid "Sites checked"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:113
+msgid "Sites indexed"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:211
+msgid "Sites inspected per batch."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:245 src/Reporting/CsvExporter.php:369 templates/admin/report-print.php:54 templates/admin/reports.php:41 templates/admin/reports.php:237
+msgid "Sites needing updates"
+msgstr ""
+
+#. translators: %s: Number.
+#: src/Notifications/Notifier.php:220
+msgid "Sites needing updates: %s"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:249 templates/admin/report-print.php:105
+msgid "Sites on HTTPS"
+msgstr ""
+
+#: templates/admin/console.php:571
+msgid "Sites pagination"
+msgstr ""
+
+#: templates/admin/settings.php:74
+msgid "Sites per batch"
+msgstr ""
+
+#: src/Admin/SitesPage.php:46
+msgid "Sites per page"
+msgstr ""
+
+#: templates/admin/health.php:275
+msgid "Sites to look at first"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:246 templates/admin/report-print.php:55 templates/admin/reports.php:54 templates/admin/reports.php:238
+msgid "Sites with errors"
+msgstr ""
+
+#: src/Notifications/Notifier.php:237
+msgid "Sites with errors:"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:250 templates/admin/report-print.php:106
+msgid "Sites with overdue tasks"
+msgstr ""
+
+#. translators: %s: Number.
+#: src/Notifications/Notifier.php:216
+msgid "Sites: %s"
+msgstr ""
+
+#: templates/admin/settings.php:82
+msgid "Snapshot interval"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:114
+msgid "Snapshots"
+msgstr ""
+
+#: templates/admin/reports.php:197
+msgid "Snapshots CSV"
+msgstr ""
+
+#: src/Admin/ConsolePage.php:104 src/Admin/DashboardPage.php:38 src/Admin/DiagnosticsPage.php:52 src/Admin/ExtensionsPage.php:84 src/Admin/HealthPage.php:43 src/Admin/LogPage.php:84 src/Admin/ReportsPage.php:41 src/Admin/SettingsPage.php:44 src/Admin/SitesPage.php:63 src/Admin/UsersPage.php:80
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: src/Admin/Actions.php:69
+msgid "Sorry, you are not allowed to export diagnostics."
+msgstr ""
+
+#: src/Admin/Actions.php:61
+msgid "Sorry, you are not allowed to export reports."
+msgstr ""
+
+#: src/Admin/Actions.php:241
+msgid "Sorry, you are not allowed to run site discovery."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:363 templates/admin/reports.php:327 templates/admin/reports.php:344
+msgid "Source"
+msgstr ""
+
+#: src/Sites/SiteStatus.php:66 templates/admin/users.php:194
+msgid "Spam"
+msgstr ""
+
+#: templates/admin/users.php:30
+msgid "Spam or deleted"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:239
+msgid "Spam sites"
+msgstr ""
+
+#: src/Admin/SitesListTable.php:79 src/Reporting/CsvExporter.php:279 templates/admin/console.php:297 templates/admin/console.php:382 templates/admin/console.php:432 templates/admin/partials/health-distribution.php:38 templates/admin/report-print.php:147 templates/admin/users.php:120
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Help.php:73
+msgid "Status counts, network facts, theme usage and the most recent sites. Use \"Discover sites\" after adding sites outside WordPress, for example by restoring a database."
+msgstr ""
+
+#: templates/admin/console.php:109
+msgid "Status: %s"
+msgstr ""
+
+#: src/Health/Checks/StorageCheck.php:35
+msgid "Storage"
+msgstr ""
+
+#: src/Network/NetworkInfo.php:54
+msgid "Subdirectories"
+msgstr ""
+
+#: src/Network/NetworkInfo.php:54
+msgid "Subdomains"
+msgstr ""
+
+#: src/Operations/Operation.php:95
+msgid "Succeeded"
+msgstr ""
+
+#: templates/admin/reports.php:194
+msgid "Summary CSV"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:118 templates/admin/users.php:191
+msgid "Super admin"
+msgstr ""
+
+#: templates/admin/user-detail.php:77 templates/admin/user-detail.php:229
+msgid "Super administrator"
+msgstr ""
+
+#: templates/admin/users.php:27 templates/admin/users.php:123
+msgid "Super administrators"
+msgstr ""
+
+#: src/Operations/Handlers/SettingsHandler.php:67
+msgid "Super admins already hold every Fleet Manager capability."
+msgstr ""
+
+#: templates/admin/settings.php:160
+msgid "Super admins always hold every capability. These are extra people."
+msgstr ""
+
+#: templates/admin/console.php:388 templates/admin/console.php:489
+msgid "Synced"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:105
+msgid "Table prefix"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:112
+msgid "Tables"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:167 templates/admin/log.php:95 templates/admin/log.php:123
+msgid "Target"
+msgstr ""
+
+#: templates/admin/extensions.php:223
+msgid "Tested up to WordPress %s"
+msgstr ""
+
+#: src/Health/Checks/MemoryLimitCheck.php:99
+msgid "That is below what WordPress needs for admin tasks; expect blank pages during imports and updates."
+msgstr ""
+
+#: src/Health/Checks/AdministratorsCheck.php:82
+msgid "That is more than most sites need; each one is another account worth protecting."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:196
+msgid "That role does not exist on this site."
+msgstr ""
+
+#: src/Health/Checks/MemoryLimitCheck.php:78
+msgid "The PHP memory limit could not be read."
+msgstr ""
+
+#: src/Health/Checks/HttpsCheck.php:60
+msgid "The Site Address uses HTTPS but the WordPress Address does not. Signing in and admin assets are likely to break."
+msgstr ""
+
+#. translators: 1: Configured URL, 2: Network address.
+#: src/Health/Checks/SiteAddressCheck.php:58
+msgid "The WordPress Address (%1$s) does not match the network address (%2$s)."
+msgstr ""
+
+#: src/Health/Checks/HttpsCheck.php:61
+msgid "The WordPress Address uses HTTPS but the Site Address does not. Visitors may load the site insecurely."
+msgstr ""
+
+#: src/Health/Checks/ActiveThemeCheck.php:57
+msgid "The active theme is installed and valid."
+msgstr ""
+
+#: src/Health/Checks/ThemeUpdatesCheck.php:59
+msgid "The active theme is up to date."
+msgstr ""
+
+#: src/Health/Checks/ActiveThemeCheck.php:52
+msgid "The active theme “%s” is broken (for example, its parent theme is missing)."
+msgstr ""
+
+#: src/Health/Checks/ActiveThemeCheck.php:49
+msgid "The active theme “%s” is not installed. Visitors may see a broken site."
+msgstr ""
+
+#: src/Health/Checks/FileEditingCheck.php:54
+msgid "The built-in editors are off and file changes are blocked entirely (DISALLOW_FILE_MODS)."
+msgstr ""
+
+#: src/Health/Checks/FileEditingCheck.php:58
+msgid "The built-in plugin and theme editors are available to super admins, so a stolen account could run PHP from the browser. Setting DISALLOW_FILE_EDIT to true in wp-config.php is the usual hardening step."
+msgstr ""
+
+#: src/Health/Checks/FileEditingCheck.php:55
+msgid "The built-in plugin and theme editors are off (DISALLOW_FILE_EDIT)."
+msgstr ""
+
+#: src/Health/Checks/DatabaseServerCheck.php:55
+msgid "The database server version could not be read."
+msgstr ""
+
+#: src/Health/Checks/DatabaseSizeCheck.php:70
+msgid "The database size could not be read on this server."
+msgstr ""
+
+#: src/Admin/Help.php:152
+msgid "The detailed inventory: users, content, registration dates and sync times, with search, filters and sorting."
+msgstr ""
+
+#: src/Admin/Help.php:117
+msgid "The headline figures, the health distribution, pending updates and a trend built from stored snapshots. Snapshots are captured automatically after discovery and on request."
+msgstr ""
+
+#. translators: %s: Link to the Fleet Manager dashboard.
+#: src/Admin/SitesPage.php:93
+msgid "The inventory is empty until site discovery has run once. Start it from the %s."
+msgstr ""
+
+#. translators: 1: Number of sites in core, 2: Number of sites in the inventory.
+#: templates/admin/dashboard.php:118
+msgid "The network has %1$s sites but the inventory lists %2$s. Refresh the inventory to bring it up to date."
+msgstr ""
+
+#: src/Operations/UpdateEnvironment.php:41
+msgid "The network is in maintenance mode, probably because another update is running. Try again in a few minutes."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:204
+msgid "The network settings changed."
+msgstr ""
+
+#: src/Operations/OperationService.php:227
+msgid "The operation was interrupted by a fatal error."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:198
+msgid "The plugin booted (network activated on Multisite)."
+msgstr ""
+
+#: templates/admin/diagnostics.php:24
+msgid "The plugin's own state, its extension points, and a report you can paste into a bug report."
+msgstr ""
+
+#: src/Admin/Help.php:144
+msgid "The plugin's own state, its hooks and REST routes, and a plain-text report for bug reports. The report contains versions, counts and configuration only — no site names, user names or addresses."
+msgstr ""
+
+#: src/Operations/OperationService.php:140
+msgid "The security check failed. Reload the page and try again."
+msgstr ""
+
+#: src/Health/Checks/SiteAddressCheck.php:64
+msgid "The site address could not be read."
+msgstr ""
+
+#: src/Health/Checks/SiteAddressCheck.php:66
+msgid "The site address matches the network address."
+msgstr ""
+
+#: src/Health/Checks/HttpsCheck.php:65
+msgid "The site addresses could not be read."
+msgstr ""
+
+#: src/Health/Checks/DatabaseVersionCheck.php:50
+msgid "The site’s database matches the installed WordPress version."
+msgstr ""
+
+#: src/Health/Checks/SiteDataCheck.php:39
+msgid "The site’s database tables are readable."
+msgstr ""
+
+#: src/Health/Checks/DatabaseVersionCheck.php:48
+msgid "The site’s database version could not be read."
+msgstr ""
+
+#: src/Health/Checks/SiteDataCheck.php:37
+msgid "The site’s settings could not be read. Its database tables may be missing or damaged."
+msgstr ""
+
+#: src/Health/Checks/AutoloadedOptionsCheck.php:68
+msgid "The size of the autoloaded options could not be read."
+msgstr ""
+
+#: src/Operations/Handlers/SnapshotHandler.php:60
+msgid "The snapshot could not be stored."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:111 src/Operations/Handlers/ThemeUpdateHandler.php:104
+msgid "The update did not complete: the installed version did not change."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:68
+msgid "The update package is not available (the plugin may require a licence). Update it from its vendor."
+msgstr ""
+
+#: src/Operations/Handlers/ThemeUpdateHandler.php:62
+msgid "The update package is not available. Update the theme from its vendor."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:91
+msgid "The user already has that role on this site."
+msgstr ""
+
+#: src/Admin/SitesListTable.php:80 src/Reporting/CsvExporter.php:341 templates/admin/console.php:318 templates/admin/extensions.php:147 templates/admin/extensions.php:182 templates/admin/report-print.php:130 templates/admin/reports.php:306
+msgid "Theme"
+msgstr ""
+
+#: templates/admin/extensions.php:274 templates/admin/site-extensions.php:194
+msgid "Theme files are shared: this updates the theme on every site that uses it. Continue?"
+msgstr ""
+
+#: src/Operations/Operation.php:74
+msgid "Theme update"
+msgstr ""
+
+#: src/Health/Checks/ThemeUpdatesCheck.php:27 src/Reporting/CsvExporter.php:248 src/Reporting/CsvExporter.php:282 src/Reporting/CsvExporter.php:371 templates/admin/console.php:37 templates/admin/console.php:87 templates/admin/console.php:387 templates/admin/console.php:481 templates/admin/report-print.php:57 templates/admin/report-print.php:150 templates/admin/reports.php:80
+msgid "Theme updates"
+msgstr ""
+
+#: templates/admin/console.php:135
+msgid "Theme: %s"
+msgstr ""
+
+#: templates/admin/extensions.php:75 templates/admin/partials/extensions-head.php:21
+msgid "Themes"
+msgstr ""
+
+#: templates/admin/console.php:354
+msgid "There are no sites on this page (%s sites in total)."
+msgstr ""
+
+#: templates/admin/health.php:182
+msgid "These apply to every site of the network."
+msgstr ""
+
+#: src/Health/Category.php:95
+msgid "These are configuration indicators, not a security assessment. Fleet Manager does not scan for malware, modified files, vulnerable code, weak passwords or intrusions, and a clean result here does not mean a site is secure. Use a dedicated security product for that."
+msgstr ""
+
+#: templates/admin/settings.php:49
+msgid "These are defaults. Anything here can also be set in code with the matching filter, which then wins."
+msgstr ""
+
+#: src/Notifications/Notifier.php:246
+msgid "These are operational indicators, not a security assessment."
+msgstr ""
+
+#: src/Admin/Help.php:135
+msgid "These values are defaults. Every one of them has a matching filter, and a filter set in code wins over the screen, so a site-specific configuration cannot be overwritten by someone clicking Save."
+msgstr ""
+
+#: src/Sites/SiteDiscovery.php:111
+msgid "This discovery run is no longer active. Start a new one."
+msgstr ""
+
+#: src/Core/Activator.php:32
+msgid "This installation is a single site, so there is no network to manage. The plugin was not activated. Convert this installation into a network first, then network activate Multisite Fleet Manager."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:97
+msgid "This is the only administrator of that site. Give another user the administrator role first."
+msgstr ""
+
+#. translators: %s: Number of sites.
+#: templates/admin/dashboard.php:104
+msgid "This network has %s site. Run site discovery to build the inventory."
+msgid_plural "This network has %s sites. Run site discovery to build the inventory."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:85
+msgid "This plugin can only be activated for the whole network."
+msgstr ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:89
+msgid "This plugin is already active on this site."
+msgstr ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:82
+msgid "This plugin is network activated, so it runs on every site. Manage it from Network Admin → Plugins."
+msgstr ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:92
+msgid "This plugin is not active on this site."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:51 src/Operations/Handlers/SitePluginHandler.php:76
+msgid "This plugin is not installed."
+msgstr ""
+
+#: src/Admin/RequirementNotice.php:85
+msgid "This plugin manages the whole network, so it must be network activated. Deactivate it on this site, then activate it from Network Admin → Plugins."
+msgstr ""
+
+#: src/Admin/ExtensionsPage.php:107 src/Operations/Handlers/SitePluginHandler.php:62 src/Operations/Handlers/UserSiteHandler.php:67 src/Rest/ExtensionsController.php:197
+msgid "This site does not exist on this network."
+msgstr ""
+
+#: src/Health/Checks/AdministratorsCheck.php:71
+msgid "This site has no administrator of its own. Only super admins can manage it; give someone the administrator role if that is not deliberate."
+msgstr ""
+
+#: templates/admin/site-extensions.php:97
+msgid "This site is deactivated or marked as spam: plugins can be deactivated but not activated."
+msgstr ""
+
+#: src/Rest/SitesController.php:200
+msgid "This site is not in the inventory."
+msgstr ""
+
+#: src/Health/Checks/HttpsCheck.php:63
+msgid "This site is served over HTTP. Traffic, including sign-ins, is not encrypted."
+msgstr ""
+
+#. translators: 1: Size, 2: Threshold.
+#: src/Health/Checks/DatabaseSizeCheck.php:82
+msgid "This site uses %1$s of the database, above the %2$s guideline. Look at revisions, transients and plugin log tables."
+msgstr ""
+
+#: src/Health/Checks/DatabaseSizeCheck.php:77
+msgid "This site uses %s of the database."
+msgstr ""
+
+#: src/Health/Checks/DatabaseVersionCheck.php:45
+msgid "This site’s database has not been upgraded to the installed WordPress version. Run Network Admin → Upgrade Network."
+msgstr ""
+
+#: src/Rest/ReportsController.php:147
+msgid "This snapshot does not exist."
+msgstr ""
+
+#: src/Operations/Handlers/ThemeUpdateHandler.php:48
+msgid "This theme is not installed."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:72 src/Operations/Handlers/ThemeUpdateHandler.php:66
+msgid "This update requires PHP %s."
+msgstr ""
+
+#: src/Operations/Handlers/PluginUpdateHandler.php:76 src/Operations/Handlers/ThemeUpdateHandler.php:70
+msgid "This update requires WordPress %s."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:80
+msgid "This user already belongs to that site."
+msgstr ""
+
+#: templates/admin/user-detail.php:117
+msgid "This user does not belong to any site of this network."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:83
+msgid "This user does not belong to that site."
+msgstr ""
+
+#: src/Admin/UsersPage.php:99 src/Operations/Handlers/SettingsHandler.php:64 src/Operations/Handlers/UserSiteHandler.php:62 src/Rest/UsersController.php:157
+msgid "This user does not exist."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:75
+msgid "This user is marked as spam or deleted on the network."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:170
+msgid "To"
+msgstr ""
+
+#: src/Admin/RequirementNotice.php:98
+msgid "To use it, convert this installation into a network (back up files and database first), then network activate the plugin."
+msgstr ""
+
+#. translators: %s: Link to the Network Setup screen.
+#: src/Admin/RequirementNotice.php:95
+msgid "Tools → Network Setup"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:236 templates/admin/report-print.php:53 templates/admin/reports.php:28
+msgid "Total sites"
+msgstr ""
+
+#: templates/admin/reports.php:231
+msgid "Trend"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:329 templates/admin/report-print.php:120 templates/admin/reports.php:288 templates/admin/reports.php:306
+msgid "Type"
+msgstr ""
+
+#: src/Operations/Handlers/Upgrade.php:50
+msgid "Unable to connect to the filesystem."
+msgstr ""
+
+#: templates/admin/health.php:118
+msgid "Unknown"
+msgstr ""
+
+#: src/Operations/OperationService.php:128
+msgid "Unknown operation."
+msgstr ""
+
+#: templates/admin/extensions.php:61
+msgid "Unused"
+msgstr ""
+
+#: templates/admin/console.php:38 templates/admin/extensions.php:226 templates/admin/site-extensions.php:142 templates/admin/site-extensions.php:187
+msgid "Up to date"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:148
+msgid "Up to date."
+msgstr ""
+
+#: templates/admin/extensions.php:151 templates/admin/extensions.php:204 templates/admin/site-extensions.php:117 templates/admin/site-extensions.php:138 templates/admin/site-extensions.php:159 templates/admin/site-extensions.php:186
+msgid "Update"
+msgstr ""
+
+#: templates/admin/extensions.php:31 templates/admin/extensions.php:38
+msgid "Update available"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:175
+msgid "Update controls"
+msgstr ""
+
+#. translators: %s: Relative time, e.g. "2 hours ago".
+#: templates/admin/console.php:164
+msgid "Update data from %s"
+msgstr ""
+
+#: src/Core/Capabilities.php:101
+msgid "Update plugins and themes"
+msgstr ""
+
+#: templates/admin/extensions.php:132
+msgid "Update selected plugins"
+msgstr ""
+
+#: templates/admin/extensions.php:132
+msgid "Update selected themes"
+msgstr ""
+
+#: templates/admin/extensions.php:277 templates/admin/site-extensions.php:197
+msgid "Update to %s"
+msgstr ""
+
+#: src/Health/Category.php:49 templates/admin/console.php:309
+msgid "Updates"
+msgstr ""
+
+#: templates/admin/reports.php:196
+msgid "Updates CSV"
+msgstr ""
+
+#: templates/admin/partials/extensions-head.php:78
+msgid "Updates are not available from Fleet Manager here."
+msgstr ""
+
+#: src/Admin/Help.php:100
+msgid "Updates are offered only where they can run safely: file changes allowed, direct filesystem access, no maintenance mode, and a compatible package."
+msgstr ""
+
+#: templates/admin/console.php:35 templates/admin/extensions.php:58 templates/admin/extensions.php:65
+msgid "Updates available"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:177
+msgid "Updates can be installed from here."
+msgstr ""
+
+#: templates/admin/site-extensions.php:66
+msgid "Updates for this site"
+msgstr ""
+
+#: templates/admin/health.php:268
+msgid "Uploads measured"
+msgstr ""
+
+#. translators: 1: Used space, 2: Quota, 3: Percentage.
+#: src/Health/Checks/StorageCheck.php:108
+msgid "Uploads use %1$s of the %2$s allowed for this site (%3$s%%)."
+msgstr ""
+
+#: src/Health/Checks/StorageCheck.php:135
+msgid "Uploads will start failing."
+msgstr ""
+
+#: templates/admin/extensions.php:152 templates/admin/extensions.php:229 templates/admin/site-extensions.php:188
+msgid "Used by"
+msgstr ""
+
+#: src/Health/Checks/DebugModeCheck.php:61
+msgid "Useful while developing; turn it off on a live network."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:171 templates/admin/log.php:98 templates/admin/log.php:150 templates/admin/settings.php:167 templates/admin/settings.php:178 templates/admin/users.php:164 templates/admin/users.php:183
+msgid "User"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:115
+msgid "User ID"
+msgstr ""
+
+#: templates/admin/settings.php:209
+msgid "User ID or login"
+msgstr ""
+
+#: templates/admin/users.php:42
+msgid "User accounts are shared by the whole network; roles are per site. Fleet Manager never shows passwords or sign-in secrets."
+msgstr ""
+
+#: src/Network/NetworkInfo.php:66
+msgid "User accounts only"
+msgstr ""
+
+#: src/Operations/Operation.php:77
+msgid "User added to site"
+msgstr ""
+
+#: src/Operations/Operation.php:78
+msgid "User removed from site"
+msgstr ""
+
+#: src/Admin/Admin.php:157 src/Admin/Help.php:106 src/Admin/SitesListTable.php:82 src/Reporting/CsvExporter.php:285
+msgid "Users"
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:72
+msgid "Users cannot be added to a deactivated or spam site."
+msgstr ""
+
+#: templates/admin/users.php:252
+msgid "Users pagination"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:229
+msgid "Value"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:110 templates/admin/extensions.php:149 templates/admin/extensions.php:203 templates/admin/log.php:97 templates/admin/log.php:141 templates/admin/site-extensions.php:116 templates/admin/site-extensions.php:137 templates/admin/site-extensions.php:184
+msgid "Version"
+msgstr ""
+
+#: templates/admin/diagnostics.php:105
+msgid "Versions, counts and configuration only — no site names, user names or addresses."
+msgstr ""
+
+#: templates/admin/users.php:241
+msgid "View"
+msgstr ""
+
+#: src/Core/Capabilities.php:99
+msgid "View and export network reports"
+msgstr ""
+
+#: src/Core/Capabilities.php:93
+msgid "View the Fleet Manager dashboard"
+msgstr ""
+
+#: src/Admin/SitesListTable.php:216
+msgid "Visit"
+msgstr ""
+
+#: templates/admin/console.php:554
+msgid "Visit site"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:182
+msgid "WP-Cron"
+msgstr ""
+
+#: templates/admin/health.php:209
+msgid "WP-Cron disabled (external scheduler expected)"
+msgstr ""
+
+#: src/Health/Checks/CronCheck.php:70
+msgid "WP-Cron is disabled in wp-config.php, so an external scheduler should be running wp-cron.php."
+msgstr ""
+
+#: templates/admin/health.php:213
+msgid "WP-Cron on page visits"
+msgstr ""
+
+#: templates/admin/settings.php:105
+msgid "Weekly"
+msgstr ""
+
+#: templates/admin/health.php:98
+msgid "What these indicators are."
+msgstr ""
+
+#: templates/admin/log.php:92 templates/admin/log.php:118
+msgid "When"
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:164
+msgid "When (UTC)"
+msgstr ""
+
+#: src/Health/Category.php:63
+msgid "Whether the site is intact and reachable as configured."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:217
+msgid "Whether upload space is measured during discovery."
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:208
+msgid "Which group an indicator belongs to."
+msgstr ""
+
+#: templates/admin/log.php:133
+msgid "Whole network"
+msgstr ""
+
+#: templates/admin/users.php:29 templates/admin/users.php:124
+msgid "Without a site"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:100 templates/admin/console.php:384 templates/admin/console.php:459 templates/admin/dashboard.php:198 templates/admin/health.php:184 templates/admin/report-print.php:102
+msgid "WordPress"
+msgstr ""
+
+#. translators: 1: Installed version, 2: Available version.
+#: src/Health/Checks/WordPressVersionCheck.php:45
+msgid "WordPress %1$s is installed; %2$s is available. Core files are shared, so updating covers every site."
+msgstr ""
+
+#: templates/admin/console.php:172
+msgid "WordPress %s"
+msgstr ""
+
+#: templates/admin/console.php:229
+msgid "WordPress %s is available. Every site of the network runs the same core files, so this update applies to the whole fleet."
+msgstr ""
+
+#: src/Health/Checks/WordPressVersionCheck.php:51
+msgid "WordPress %s is up to date."
+msgstr ""
+
+#: src/Operations/UpdateEnvironment.php:37
+msgid "WordPress cannot write files directly on this server (FTP or SSH credentials are required). Use Network Admin → Updates, which can ask for them."
+msgstr ""
+
+#: src/Health/Checks/DatabaseVersionCheck.php:29
+msgid "WordPress database"
+msgstr ""
+
+#: src/Operations/Handlers/SitePluginHandler.php:131
+msgid "WordPress did not apply the change."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:158
+msgid "WordPress did not apply the new role."
+msgstr ""
+
+#: src/Operations/Handlers/UserSiteHandler.php:137
+msgid "WordPress did not remove the user from the site."
+msgstr ""
+
+#: src/Health/Checks/OutdatedComponentsCheck.php:81
+msgid "WordPress itself"
+msgstr ""
+
+#: src/Health/Checks/WordPressVersionCheck.php:29 src/Reporting/CsvExporter.php:234
+msgid "WordPress version"
+msgstr ""
+
+#: src/Health/Checks/OutdatedComponentsCheck.php:76
+msgid "WordPress, plugins and themes on this site are all at their latest installed versions. That does not mean they are free of vulnerabilities."
+msgstr ""
+
+#: src/Health/Checks/StorageCheck.php:137
+msgid "Worth planning for before it runs out."
+msgstr ""
+
+#: src/Reporting/CsvExporter.php:143 src/Reporting/CsvExporter.php:306 src/Reporting/CsvExporter.php:347 templates/admin/user-detail.php:230
+msgid "Yes"
+msgstr ""
+
+#: src/Operations/OperationService.php:134
+msgid "You are not allowed to perform this operation."
+msgstr ""
+
+#: src/Admin/Help.php:109
+msgid "You can add a user to a site, change their role there, or remove them. A site is never left without an administrator. Creating, editing and deleting accounts stays in Network Admin → Users."
+msgstr ""
+
+#. translators: 1: Network name, 2: Operation label.
+#: src/Notifications/Notifier.php:148
+msgid "[%1$s] Fleet operation failed: %2$s"
+msgstr ""
+
+#. translators: 1: Network name, 2: Short status, e.g. "3 sites need attention".
+#: src/Notifications/Notifier.php:115
+msgid "[%1$s] Fleet report: %2$s"
+msgstr ""
+
+#: src/Admin/SitesPage.php:94 templates/admin/log.php:155
+msgid "dashboard"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:107
+msgid "database"
+msgstr ""
+
+#: templates/admin/settings.php:80 templates/admin/settings.php:81
+msgid "days"
+msgstr ""
+
+#: templates/admin/reports.php:217
+msgid "error"
+msgstr ""
+
+#: src/Notifications/Notifier.php:197
+msgid "everything looks healthy"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:107
+msgid "external"
+msgstr ""
+
+#: templates/admin/console.php:499
+msgid "for %s"
+msgstr ""
+
+#: templates/admin/log.php:82
+msgid "for site #%s"
+msgstr ""
+
+#: templates/admin/log.php:155
+msgid "form"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:121
+msgid "free"
+msgstr ""
+
+#: templates/admin/user-detail.php:171
+msgid "from %s"
+msgstr ""
+
+#: templates/admin/partials/user-activity.php:30
+msgid "from an open session"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:121
+msgid "held"
+msgstr ""
+
+#: templates/admin/settings.php:82
+msgid "hours"
+msgstr ""
+
+#: templates/admin/report-print.php:43
+msgid "inventory synced %s"
+msgstr ""
+
+#: templates/admin/partials/user-activity.php:31
+msgid "last sign-in"
+msgstr ""
+
+#: templates/admin/reports.php:221
+msgid "needs attention"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:119 src/Admin/DiagnosticsPage.php:124
+msgid "never"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:120
+msgid "no"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:96
+msgid "not scheduled"
+msgstr ""
+
+#. translators: %s: Number of sites.
+#: templates/admin/console.php:80 templates/admin/console.php:90 templates/admin/reports.php:74 templates/admin/reports.php:87 templates/admin/users.php:212
+msgid "on %s site"
+msgid_plural "on %s sites"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/DiagnosticsPage.php:257
+msgid "per operation, plus a nonce"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:112
+msgid "present"
+msgstr ""
+
+#: templates/admin/reports.php:171
+msgid "since the previous snapshot"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:103
+msgid "subdirectories"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:103
+msgid "subdomains"
+msgstr ""
+
+#: src/Admin/DiagnosticsPage.php:106
+msgid "unlimited"
+msgstr ""
+
+#: src/Health/Checks/MemoryLimitCheck.php:88 src/Health/Checks/MemoryLimitCheck.php:94
+msgid "unlimited memory"
+msgstr ""
+
+#: templates/admin/log.php:155
+msgid "via %s"
+msgstr ""
+
+#: templates/admin/reports.php:255
+msgid "was %s"
+msgstr ""
